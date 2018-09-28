@@ -1,20 +1,20 @@
+@font-face {
+    src: url(fonts/adam.otf);
+    font-family: ADAM;
+}
+
 body, html{
     height:100%;
     margin:0;
     font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     line-height: 1.8em;
-    color: #666666;
+    color: white;
 }
 
-@media (min-width: 768px) {
-    .ptext.border{
-        color: ;
-    }
- }
 
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
     opacity: 0.70;
     background-position: center;
@@ -42,14 +42,20 @@ body, html{
     background-image: url('images/img3.jpg');
     min-height: 400px;
 }
+.pimg4{
+    background-image: url('images/img1.jpeg');
+    min-height: 400px;
+    padding-bottom: 50px;
+}
 
 .section{
     text-align: center;
     padding: 50px 80px;
+    
 }
 
 .section-light{
-    background-color: lightgrey;
+    background-color: aliceblue;
     color: #666;
 }
 
@@ -70,7 +76,7 @@ body, html{
 }
 
 .ptext .border{
-    background-color: #666;
+    background-color: #282e34;
     color: white;
     padding: 20px;
 }
@@ -84,4 +90,73 @@ body, html{
         background-attachment: scroll;
     }
 
+    .border{
+        display: none;
+    }
+}
+.block{
+    float: left;
+    width:33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.content-wrapper{
+    width: 80%;
+    margin: 4% 10% 5% 10%;
+}
+.content-wrapper img{
+    width: 80%;
+    
+}
+.text-wrapper{
+    width: 80%;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 10%;
+}
+.text-wrapper h2, p{
+    text-align: center;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: #282e34;
+    padding: 160px 0px;
+}
+footer p{
+    color:white;
+}
+footer p a{
+    color:white;
+    text-decoration:none;
+}
+
+footer p a:hover{
+    color:pink;
+    text-decoration: underline;
+}
+
+footer p a:active {
+    color:maroon;
+    text-decoration: underline;
+}
+
+.square,{
+    margin:300px;
+}
+.carousel-item img{
+    width: 1600px;
+    height: 900px;
+}
+
+.addition{
+    margin: 150px;
+}
+.cover{
+    background-color: skyblue;
+    opacity: 0.50;
 }
