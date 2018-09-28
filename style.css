@@ -13,6 +13,22 @@ body, html{
     color: white;
 }
 
+/* Global */
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+/*header*/
+header{
+    margin:0;
+}
+nav:hover{
+    background-color: #282e34; 
+    color:aliceblue;
+    transition: 0.8s;
+}
 
 .pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
@@ -79,20 +95,20 @@ body, html{
     background-color: #282e34;
     color: white;
     padding: 20px;
+    max-width: fit-content;
+    margin: auto;
 }
 
 .ptext .border.trans{
     background-color: transparent;
+    
 }
 
-@media(max-width:568px;){
+@media(max-width: 568px){
     .pimg1, .pimg2, .pimg3{
         background-attachment: scroll;
     }
-
-    .border{
-        display: none;
-    }
+    
 }
 .block{
     float: left;
@@ -157,6 +173,11 @@ footer p a:active {
     margin: 150px;
 }
 .cover{
-    background-color: skyblue;
-    opacity: 0.50;
+    background-color: blue;
+    opacity: 0.70;
+    margin:auto;
+    max-width: fit-content;
+}
+.cover h5{
+    color: aliceblue;
 }
