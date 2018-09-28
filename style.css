@@ -24,6 +24,10 @@ body, html{
 header{
     margin:0;
 }
+nav{
+    transition: 0.8s;
+}
+
 nav:hover{
     background-color: #282e34; 
     color:aliceblue;
@@ -116,27 +120,8 @@ nav:hover{
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
-    
 }
 
-.content-wrapper{
-    width: 80%;
-    margin: 4% 10% 5% 10%;
-}
-.content-wrapper img{
-    width: 80%;
-    
-}
-.text-wrapper{
-    width: 80%;
-    position: relative;
-    margin-top: -20%;
-    margin-left: 10%;
-}
-.text-wrapper h2, p{
-    text-align: center;
-    color: white;
-}
 
 footer {
     width: 100%;
@@ -171,6 +156,8 @@ footer p a:active {
 
 .addition{
     margin: 150px;
+    height: auto;
+    max-width: 100%;
 }
 .cover{
     background-color: blue;
