@@ -25,6 +25,11 @@ body, html{
 header{
     margin:0;
 }
+
+nav{
+    transition: 0.8s;
+}
+
 nav:hover{
     background-color: #282e34; 
     color:aliceblue;
@@ -294,7 +299,6 @@ nav:hover{
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
-    
 }
 
 footer {
@@ -331,6 +335,8 @@ footer p a:active {
 
 .addition{
     margin: 150px;
+    height: auto;
+    max-width: 100%;
 }
 .cover{
     background-color: blue;
@@ -393,6 +399,7 @@ footer p a:active {
 @media(max-width: 575.98px){
     .pimg1, .pimg2, .pimg3{
         background-attachment: scroll;
-    }
-    
+    }    
 }
+}
+
