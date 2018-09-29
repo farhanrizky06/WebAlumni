@@ -300,29 +300,78 @@ nav:hover{
     padding: 10px;
     box-sizing: border-box;
 }
+/* The beginning of footer */
 
-footer {
-    width: 100%;
-    background-color: #282e34;
-    padding: 160px 0px;
-    text-align: center;
+footer{
+    width: 90%;
+    margin: auto;
+    padding: 100px 0px;
 }
-footer p{
-    color:white;
+
+
+.footer1{
+    color: lightgrey;
 }
-footer p a{
-    color:white;
+
+.footer1 p{
+    font-size: 1rem;
+}
+
+
+footer hr{
+    color: rgb(109, 105, 100);
+    border: 0;
+    background-color: rgb(109, 105, 100);
+    height: 1px; 
+}
+
+.footer1 a,i{
+    padding: 5px 5px;
+    color: rgb(109, 105, 100);
+    text-align: right;
     text-decoration:none;
 }
 
-footer p a:hover{
-    color:pink;
-    text-decoration: underline;
+.footer1 a:hover{
+    color: #282828;
+    text-decoration: none;
 }
 
-footer p a:active {
-    color:maroon;
-    text-decoration: underline;
+.footer1 a:active {
+    color: #282e34;
+    text-decoration: none;
+}
+
+.footer2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 20px;
+    color: lightgrey;
+}
+
+.footer2 h6{
+    text-transform: uppercase;
+    color: rgb(109, 105, 100);
+}
+
+.footer2 p{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer2 a:hover{
+    text-decoration: none;
+    color: #282828;
+}
+
+.footer2 a:active {
+    color: #282e34;
+    text-decoration: none;
 }
 
 .square,{
