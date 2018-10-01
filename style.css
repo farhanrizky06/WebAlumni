@@ -1,8 +1,3 @@
-@font-face {
-    src: url(fonts/adam.otf);
-    font-family: ADAM;
-}
-
 body, html{
     height:100%;
     margin:0;
@@ -11,7 +6,6 @@ body, html{
     font-weight: 400;
     line-height: 1.8em;
     color: white;
-    background-color: #000; 
 }
 
 /* Global */
@@ -31,10 +25,13 @@ nav{
 }
 
 nav:hover{
-    background-color: #282e34; 
+    background-color: #f12b37; 
     color:aliceblue;
     transition: 0.8s;
 }
+
+/*header end*/
+/* Parallex Images*/
 
 .pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
@@ -70,47 +67,45 @@ nav:hover{
     padding-bottom: 50px;
 }
 
-section{
+/*end of parallex images*/
+
+.section{
     text-align: center;
     padding: 50px 80px;
-    
 }
 
 .section-light{
-    margin: 45px;
     background-color: aliceblue;
     color: #666;
 }
-
-.intro-purpose{
-    display: inline-grid;
-    grid-template-columns: repeat(3,1fr);
-
+/*row vertical, column horizontal effect*/
+#box1{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 50px;
 }
 
-.section-light h5{
+#box1 h2, h5{
+    text-align: center;
+    text-shadow: 1px 2px #f12b37;
+    
+}
+
+#box2{
+    padding: 50px;
+    background-color: #f12b37;
     text-align: justify;
-    padding: 0px 35px;
-    font-size: 24px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: flex-start;
 }
 
-#intro{
-    grid-column: 1/3;
-    padding: 20px 45px;
-    text-align: justify;
-    font-size: 18px;
-}
+/*button settings section 1*/
 
-#purpose{
-    grid-column: 3/3;
-    padding: 20px 45px;
-    text-align: justify;
-    font-size: 18px;
-}
-.section-light .intro-purpose .readmore-btn{
+.introduction .readmore-btn{
     padding: 15px 5px;
     font-size: auto;
-    border: 1px solid #666;
     width: 140px;
     height: 55px;
     text-align: center;
@@ -126,21 +121,23 @@ section{
     border-radius: 3px;
     cursor: pointer;
 }
-
 .readmore-btn a{
-    color: #666;
+    color: white;
     text-decoration:none;
 }
 
 .readmore-btn a:hover{
-    color: #666;
+    color: pink;
     text-decoration: none;
 }
 .readmore-btn a:active {
     color: #282e34;
     text-decoration: none;
 }
-/*The end of section-light*/
+
+/*The end of section 1*/
+
+/*Beginning of section 2*/
 
 .news{
     color: lightgrey;
@@ -300,101 +297,38 @@ section{
     padding: 10px;
     box-sizing: border-box;
 }
+
+
 /* The beginning of footer */
 
 footer{
-    width: 90%;
+    width: 100%;
+    background: #000;
     margin: auto;
-    padding: 100px 0px;
+    padding: 50px 0px;
+    text-align: center;
+    color: #ccc;
 }
-
-
-.footer1{
-    color: lightgrey;
-    text-align: right;
-    display: grid;
-    grid-template-columns: max-content max-content;
-}
-
-.footer1 h6{
-    margin-right: 15px;
-}
-
-.footer1 p{
-    font-size: 1rem;
-}
-
 
 footer hr{
-    color: rgb(109, 105, 100);
-    border: 0;
-    background-color: rgb(109, 105, 100);
-    height: 1px; 
+    height: 0.2px;
+    background: #ccc; 
+    width: 100%;
 }
 
-.footer1 a{
-    padding: 2px;
-    color: rgb(109, 105, 100);
-    text-decoration:none;
-    font-size: 0.7em;
-}
-
-.footer1 a:hover{
-    color: #282828;
-    text-decoration: none;
-}
-
-.footer1 a:active {
-    color: #282e34;
-    text-decoration: none;
-}
-
-.footer2{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-gap: 20px;
-    color: lightgrey;
-}
-
-.footer2 h6{
-    text-transform: uppercase;
-    color: rgb(109, 105, 100);
-}
-
-.footer2 p{
-    line-height: 1.3em;
-    text-align: justify;
-}
-
-.footer2 a{
-    text-decoration: none;
-    color: lightgray;
-}
-
-.footer2 a:hover{
-    text-decoration: none;
-    color: #282828;
-}
-
-.footer2 a:active {
-    color: #282e34;
-    text-decoration: none;
-}
-
+/*footer ends*/
 
 .square,{
     margin:300px;
-}
-
-.carousel-item img{
-    width: 1600px;
-    height: 900px;
 }
 
 .addition{
     margin: 150px;
     height: auto;
     max-width: 100%;
+}
+.addition h2{
+    color: #f12b37;
 }
 .cover{
     background-color: blue;
@@ -431,7 +365,6 @@ footer hr{
         grid-column:1/4;
 
     }
-
 }
 @media(max-width:700px){
     #news-1{
@@ -452,10 +385,11 @@ footer hr{
     #news-5{
         grid-column:1/4;
     }
+    
 }
 
 @media(max-width: 575.98px){
     .pimg1, .pimg2, .pimg3{
         background-attachment: scroll;
     }    
-}}
+}
