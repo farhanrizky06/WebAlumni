@@ -74,9 +74,9 @@ nav:hover{
     padding: 50px 50px; 
 }
 
-.section-light{
-    background-color: aliceblue;
-    color: #666;
+.section-news{
+    background-color:#282e34;
+    padding: 50px 0px;
 }
 
 /*row vertical, column horizontal effect*/
@@ -502,7 +502,7 @@ footer{
 
 @media(max-width: 575.98px){
     .pimg1, .pimg2, .pimg3{
-        background-attachment: scroll;
+        background-attachment: fixed;
     }    
 }
 
