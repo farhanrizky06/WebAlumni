@@ -99,6 +99,7 @@ nav:hover{
     display: grid;
     grid-template-columns: auto;
     justify-content: flex-start;
+    opacity : 0.7;
 }
 
 /*button settings section 1*/
