@@ -78,6 +78,7 @@ nav:hover{
     background-color: aliceblue;
     color: #666;
 }
+
 /*row vertical, column horizontal effect*/
 #box1{
     display: grid;
@@ -86,10 +87,12 @@ nav:hover{
     padding: 50px;
 }
 
+
 #box1 h2, h5{
     text-align: center;
     text-shadow: 1px 2px #f12b37;
     
+
 }
 
 #box2{
@@ -103,6 +106,7 @@ nav:hover{
 }
 
 /*button settings section 1*/
+
 
 .introduction .readmore-btn{
     padding: 15px 5px;
@@ -303,12 +307,41 @@ nav:hover{
 /* The beginning of footer */
 
 footer{
+
     width: 100%;
     background: #000;
     margin: auto;
     padding: 50px 0px;
     text-align: center;
     color: #ccc;
+}
+
+/*footer ends*/
+
+
+.footer2 h6{
+    text-transform: uppercase;
+    color: rgb(109, 105, 100);
+}
+
+.footer2 p{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer2 a:hover{
+    text-decoration: none;
+    color: #282828;
+}
+
+.footer2 a:active {
+    color: #282e34;
+    text-decoration: none;
 }
 
 /*footer ends*/
@@ -360,6 +393,7 @@ footer{
         grid-column:1/4;
 
     }
+
 }
 @media(max-width:700px){
     #news-1{
@@ -380,7 +414,7 @@ footer{
     #news-5{
         grid-column:1/4;
     }
-    
+
 }
 
 @media(max-width: 575.98px){
