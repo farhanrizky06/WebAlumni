@@ -525,7 +525,7 @@ footer{
     }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     .fullscreen {
       background: url('images/ironman.jpg') center center / cover no-repeat;
     }
