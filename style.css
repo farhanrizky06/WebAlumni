@@ -76,7 +76,9 @@ nav:hover{
 
 .section-news{
     background-color:#282e34;
+
     padding: 50px 0px;
+
 }
 
 /*row vertical, column horizontal effect*/
@@ -103,6 +105,8 @@ nav:hover{
     grid-template-columns: auto;
     justify-content: flex-start;
     opacity : 0.7;
+    border: #f12b37 solid 3px;
+    border-radius: 5px;
 }
 
 /*button settings section 1 INTRO*/
@@ -313,6 +317,7 @@ nav:hover{
     min-height: 100%;
 }
 
+
 /* Add some content at the bottom of the video/page */
 .content {
     position: relative;
@@ -361,6 +366,7 @@ nav:hover{
     grid-column: 3/4;
     padding: 30px 0px;
 }
+
 
 /*END OF PHOTOS AND END OF SECTION 3 MEDIA*/
 /* The beginning of footer */
@@ -471,6 +477,7 @@ footer{
         height: auto;
         width: 100%;
     }
+
 }
 @media(max-width:700px){
     #video{
@@ -512,22 +519,32 @@ footer{
     .pimg1, .pimg2, .pimg3{
         background-attachment: fixed;
     }    
+    .section{
+        text-align: center;
+        padding: 20px 20px; 
+    }
 }
 
+
   @media (max-aspect-ratio: 16/9) {
+
     #video {
       width: 100%;
       height: auto;
     }
   }
   
+
   @media (max-width: 767px) {
+
     .fullscreen {
       background: url('images/ironman.jpg') center center / cover no-repeat;
     }
   
     #video {
+
         width: 100%;
         height: auto;
+
     }
   }
