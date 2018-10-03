@@ -72,8 +72,9 @@ nav:hover{
 .section{
     text-align: center;
     padding: 50px 50px; 
-    background-color:#282e34;
+    background-color: aliceblue;
 }
+
 
 /*row vertical, column horizontal effect*/
 #box1{
@@ -93,15 +94,17 @@ nav:hover{
 
 #box2{
     padding: 50px;
-    background-color: #f12b37;
+    background-color:skyblue;
     text-align: justify;
     display: grid;
+    opacity: 0.7;
     grid-template-columns: auto;
     justify-content: flex-start;
-    opacity : 0.7;
-    border: #f12b37 solid 3px;
+    border: white solid 3px;
     border-radius: 5px;
 }
+
+
 
 /*button settings section 1 INTRO*/
 
@@ -273,10 +276,10 @@ nav:hover{
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
+
 }
 
 .ptext .border{
-    background-color: #282e34;
     color: white;
     padding: 20px;
     max-width: fit-content;
@@ -321,39 +324,57 @@ nav:hover{
 
 .photos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /*horizontal effect*/
+    grid-template-rows: 1fr 1fr; 
     grid-gap: 1em;
     grid-auto-rows: minmax(100px,auto);
-    border: pink groove 5px;
-    border-radius: 5px;
     padding-top: 100px;
     margin-top: 50px;
 }
 .photos h1{
     text-align: center;
-    color: palevioletred;
+    color: #f12b37;
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
-.photos img{
+#photo3 img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 650px;
+}
+#photo1 img, #photo2 img, #photo4 img, #photo5 img{
     width: 100%;
     max-width: 600px;
     height: auto;
     max-height: 300px;
-    border: pink groove 5px;
+    
 }
 #photo1{
     grid-column: 1/2;
-    padding: 30px 0px;
+    grid-row: 1/2;
+    
 }
 #photo2{
-    grid-column: 2/3;
-    padding: 30px 0px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
 }
 #photo3{
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+}
+#photo4{
     grid-column: 3/4;
-    padding: 30px 0px;
+    grid-row: 1/2;
+
+}
+#photo5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+
 }
 
 
@@ -363,11 +384,11 @@ nav:hover{
 footer{
 
     width: 100%;
-    background: #000;
+    background: aliceblue;
     margin: auto;
     padding: 50px 0px;
     text-align: center;
-    color: #ccc;
+    color: #282e34;
 }
 
 /*footer ends*/
@@ -460,7 +481,7 @@ footer{
         width: 100%;
         max-width: 600px;
         height: auto;
-        border: pink groove 5px;
+        border: cadetblue groove 5px;
     }
     #video{
         height: auto;
@@ -536,4 +557,152 @@ footer{
         height: auto;
 
     }
+  }
+
+
+ /* ANIMATIONS */
+  /*ANIMATION FOR DIV INTRODUCTION*/
+
+@-webkit-keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+  .introduction{
+    animation-name: fadeInUpBig;
+    animation-duration: 3.5s;
+    -webkit-animation-name: fadeInUpBig;
+}
+
+/*ANIMATION FOR ID NEWS-1*/
+
+@-webkit-keyframes fadeInLeftBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-2000px, 0, 0);
+      transform: translate3d(-2000px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInLeftBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-2000px, 0, 0);
+      transform: translate3d(-2000px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  #news-1 {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+    animation-duration: 3.5s;
+  }
+
+
+
+/*ANIMATION FOR ID NEWS-4*/
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#news-4 {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+  animation-duration: 3.5s;
+}
+
+/* ANIMATION FOR NEWS-2 AND NEWS-5*/
+
+  @-webkit-keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  #news-2, #news-5 {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    animation-duration: 3.5s;
   }
