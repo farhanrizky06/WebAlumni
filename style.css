@@ -72,13 +72,7 @@ nav:hover{
 .section{
     text-align: center;
     padding: 50px 50px; 
-}
-
-.section-news{
     background-color:#282e34;
-
-    padding: 50px 0px;
-
 }
 
 /*row vertical, column horizontal effect*/
@@ -268,11 +262,6 @@ nav:hover{
 
 /*End of Section 2 NEWS*/
 /*BEGINNING OF SECTION 3 MEDIA*/
-
-.section-dark{
-    background-color: #282e34;
-    color: lightgrey;
-}
 
 .ptext{
     position: absolute;
