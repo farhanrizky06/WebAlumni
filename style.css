@@ -75,6 +75,39 @@ nav:hover{
     background-color: aliceblue;
 }
 
+.ptext{
+    position: absolute;
+    display: flex;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.ptext .border{
+    color: white;
+    padding: 20px;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+    
+}
+
+.block{
+    float: left;
+    width:33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 
 /*row vertical, column horizontal effect*/
 #box1{
@@ -272,39 +305,6 @@ nav:hover{
 
 /*End of Section 2 NEWS*/
 /*BEGINNING OF SECTION 3 MEDIA*/
-
-.ptext{
-    position: absolute;
-    display: flex;
-    top:50%;
-    width:100%;
-    text-align: center;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-
-}
-
-.ptext .border{
-    color: white;
-    padding: 20px;
-    max-width: fit-content;
-    margin: auto;
-}
-
-.ptext .border.trans{
-    background-color: transparent;
-    
-}
-
-.block{
-    float: left;
-    width:33.3%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-}
 
 /*video*/
 /* Style the video: 100% width and height to cover the entire window */
