@@ -82,15 +82,22 @@ nav:hover{
     grid-template-columns: auto;
     justify-content: center;
     padding: 50px;
+	
+	
 }
 
-
-#box1 h2, h5{
-    text-align: center;
-    text-shadow: 1px 2px #f12b37;
-    
-
+.theQuote, .theQuoteW{
+	font-family: 'Anton', sans-serif;
+	font-style:italic;
+	text-shadow:2px 2px 1px #ff3030;
+	
 }
+.theQuote{
+	transition:3s;
+	font-size:60px;
+	letter-spacing:3px;
+}
+
 
 #box2{
     padding: 50px;
@@ -446,6 +453,13 @@ footer{
 
 /* Media Queries */
 @media(max-width:1000px){
+	
+
+	.theQuote{
+		transition:3s;
+		font-size:35px;
+	letter-spacing:3px;}
+  
     #news-1{
         grid-column:1/3;
         grid-row: 1/2;
@@ -552,6 +566,11 @@ footer{
         text-align: center;
         padding: 20px 20px; 
     }
+	.theQuote{
+		transition:3s;
+	font-size:24px;
+	letter-spacing:3px;
+}
 }
 
 
@@ -576,45 +595,21 @@ footer{
         height: auto;
 
     }
-  }
-
-
- /* ANIMATIONS */
-  /*ANIMATION FOR DIV INTRODUCTION*/
-
-@-webkit-keyframes fadeInUpBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 2000px, 0);
-      transform: translate3d(0, 2000px, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  @keyframes fadeInUpBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 2000px, 0);
-      transform: translate3d(0, 2000px, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+	.theQuote{
+		transition:3s;
+	font-size:40px;
+	letter-spacing:3px;
 }
+  }
+  @media (max-width: 400px) {
 
-  .introduction{
-    animation-name: fadeInUpBig;
-    animation-duration: 3.5s;
-    -webkit-animation-name: fadeInUpBig;
-}
+    
+	.theQuote{
+		transition:3s;
+	font-size:20px;
+	letter-spacing:3px;
+		}
+  }
 
 /*ANIMATION FOR ID NEWS-1*/
 
