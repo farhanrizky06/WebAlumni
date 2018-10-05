@@ -6,7 +6,7 @@ window.addEventListener("scroll", function() {
   }
 });
 
-
+var heart = document.getElementsByClassName("fa-heart")[0];
 var sectionIntro = document.getElementsByClassName("section")[0];
 var intro = document.getElementById("box2");
 
