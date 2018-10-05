@@ -1,0 +1,200 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: white;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+/*Header*/
+header{
+    margin:0;
+}
+
+nav{
+    transition: 0.8s;
+}
+
+nav:hover{
+    background-color: #f12b37; 
+    color:aliceblue;
+    transition: 0.8s;
+}
+
+/*HEADER end*/
+/* Parallax Images*/
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+/*fixed = parallax
+  scroll = normal
+  */
+
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('images/img1.jpeg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('images/img2.jpeg');
+    min-height: 250px;
+}
+
+.pimg3{
+    background-image: url('images/img3.jpg');
+    min-height: 250px;
+}
+.pimg4{
+    background-image: url('images/img1.jpeg');
+    min-height: 250px;
+    padding-bottom: 50px;
+}
+
+/*end of PARALLAX images*/
+
+.section{
+    text-align: center;
+    padding: 50px 50px; 
+    background-color: aliceblue;
+}
+
+.ptext{
+    position: absolute;
+    display: flex;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.ptext .border{
+    color: white;
+    padding: 20px;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+    
+}
+
+.block{
+    float: left;
+    width:33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* The beginning of footer */
+
+footer{
+
+    width: 100%;
+    background: aliceblue;
+    margin: auto;
+    padding: 50px 0px;
+    text-align: center;
+    color: #282e34;
+}
+
+/*footer ends*/
+
+
+.footer2 h6{
+    text-transform: uppercase;
+    color: rgb(109, 105, 100);
+}
+
+.footer2 p{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer2 a:hover{
+    text-decoration: none;
+    color: #282828;
+}
+
+.footer2 a:active {
+    color: #282e34;
+    text-decoration: none;
+}
+
+/*footer ends*/
+/*FEW ADDITIONALS*/
+
+.square,{
+    margin:300px;
+}
+
+.addition{
+    margin: 150px;
+    height: auto;
+    max-width: 100%;
+}
+.addition h2{
+    color: #f12b37;
+}
+.cover{
+    background-color: blue;
+    opacity: 0.70;
+    margin:auto;
+    max-width: fit-content;
+}
+.cover h5{
+    color: aliceblue;
+}
+
+/* Media Queries */
+@media(max-width:1000px){
+	
+
+	
+
+}
+@media(max-width:700px){
+    
+
+}
+
+@media(max-width: 575.98px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: fixed;
+    }    
+    .section{
+        text-align: center;
+        padding: 20px 20px; 
+    }
+}
+
+

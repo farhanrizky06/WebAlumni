@@ -31,7 +31,7 @@ nav:hover{
 }
 
 /*HEADER end*/
-/* Parallex Images*/
+/* Parallax Images*/
 
 .pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
@@ -40,7 +40,7 @@ nav:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-/*fixed = parallex
+/*fixed = parallax
   scroll = normal
   */
 
@@ -54,20 +54,20 @@ nav:hover{
 
 .pimg2{
     background-image: url('images/img2.jpeg');
-    min-height: 400px;
+    min-height: 250px;
 }
 
 .pimg3{
     background-image: url('images/img3.jpg');
-    min-height: 400px;
+    min-height: 250px;
 }
 .pimg4{
     background-image: url('images/img1.jpeg');
-    min-height: 400px;
+    min-height: 250px;
     padding-bottom: 50px;
 }
 
-/*end of PARALLEX images*/
+/*end of PARALLAX images*/
 
 .section{
     text-align: center;
@@ -335,13 +335,13 @@ nav:hover{
     grid-template-rows: 1fr 1fr; 
     grid-gap: 1em;
     grid-auto-rows: minmax(100px,auto);
-    padding-top: 100px;
+
     margin-top: 50px;
 }
-.photos h1{
+#photos-h1{
     text-align: center;
-    color: #f12b37;
-    font-size: 27px;
+    color: #ad2a33;
+    font-size: 30px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
@@ -383,6 +383,7 @@ nav:hover{
     grid-row: 2/3;
 
 }
+
 
 
 /*END OF PHOTOS AND END OF SECTION 3 MEDIA*/
@@ -520,6 +521,7 @@ footer{
         grid-row: 5/6;
         max-height: 350px;
     }
+    
     .photos img{
         width: 100%;
         max-width: 600px;
@@ -611,112 +613,3 @@ footer{
 		}
   }
 
-/*ANIMATION FOR ID NEWS-1*/
-
-@-webkit-keyframes fadeInLeftBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-2000px, 0, 0);
-      transform: translate3d(-2000px, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  @keyframes fadeInLeftBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-2000px, 0, 0);
-      transform: translate3d(-2000px, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  #news-1 {
-    -webkit-animation-name: fadeInLeftBig;
-    animation-name: fadeInLeftBig;
-    animation-duration: 3.5s;
-  }
-
-
-
-/*ANIMATION FOR ID NEWS-4*/
-
-@-webkit-keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRightBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-#news-4 {
-  -webkit-animation-name: fadeInRightBig;
-  animation-name: fadeInRightBig;
-  animation-duration: 3.5s;
-}
-
-/* ANIMATION FOR NEWS-2 AND NEWS-5*/
-
-  @-webkit-keyframes fadeInUpBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 2000px, 0);
-      transform: translate3d(0, 2000px, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  @keyframes fadeInUpBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 2000px, 0);
-      transform: translate3d(0, 2000px, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  #news-2, #news-5 {
-    -webkit-animation-name: fadeInUpBig;
-    animation-name: fadeInUpBig;
-    animation-duration: 3.5s;
-  }
