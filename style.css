@@ -27,20 +27,35 @@ header{
 
 nav{
     transition: 0.8s;
+    color:white;
 }
 
 nav:hover{
-    background-color: cornflowerblue; 
+    background-color: black; 
     color:aliceblue;
     transition: 0.8s;
 }
+
+.nav-link{
+    color: white !important;
+}
+
+.navbar-brand{
+    color: white !important;   
+}
+
+.btn-outline-dark{
+    color: white !important;
+    border-color: white !important;
+}
+
 
 /*HEADER end*/
 /* Parallax Images*/
 
 .pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
-    opacity: 0.70;
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,8 +68,10 @@ nav:hover{
 }
 
 .pimg1{
-    background-image: url('images/img1.jpeg');
+    background-image: url('images/background abstract/OLO2DT0.jpg');
     min-height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .pimg2{
@@ -94,17 +111,17 @@ nav:hover{
 }
 
 .ptext-first{
-    position: absolute;
-    display: flex;
-    top: 50%;
     width:100%;
     text-align: center;
     color: black;
-    font-size: 27px;
+    font-size: 40px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    
+    opacity: 0;
+    transition: 1s;
 }
+
+
 
 .ptext .border{
     color: white;

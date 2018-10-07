@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function() {
   if (this.pageYOffset > 100) {
-    document.getElementsByClassName("navbar")[0].style.backgroundColor = "white";
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "black";
   } else {
     document.getElementsByClassName("navbar")[0].style.backgroundColor = "";
   }
@@ -27,5 +27,17 @@ window.addEventListener("scroll",function(){
 		intro.style.transform = "translate3D(0,0,0)"
 	}
 })
+
+
+function landingPageTextAnimation(){	
+	landingPageText.style.opacity = 1;
+}
+
+var landingPageText = document.getElementsByClassName("ptext-first")[0];
+if(landingPageText == undefined){console.log('nil')}
+else{
+	setTimeout(function(){
+	landingPageTextAnimation()},500)
+}
 
 
