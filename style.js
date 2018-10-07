@@ -33,7 +33,7 @@ function landingPageTextAnimation(){
 	landingPageText.style.opacity = 1;
 }
 
-var landingPageText = document.getElementsByClassName("ptext-first")[0];
+var landingPageText = document.getElementsByClassName("theText")[0];
 if(landingPageText == undefined){console.log('nil')}
 else{
 	setTimeout(function(){
