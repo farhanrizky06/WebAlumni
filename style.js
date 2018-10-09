@@ -29,15 +29,15 @@ window.addEventListener("scroll",function(){
 })
 
 
-function landingPageTextAnimation(){	
-	landingPageText.style.opacity = 1;
+function landingPageTextAnimation(x){	
+	x.style.opacity = 1;
 }
 
 var landingPageText = document.getElementsByClassName("theTextBox")[0];
 if(landingPageText == undefined){console.log('nil')}
 else{
 	setTimeout(function(){
-	landingPageTextAnimation()},500)
+	landingPageTextAnimation(landingPageText)},500)
 }
 
 

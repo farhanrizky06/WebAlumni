@@ -104,10 +104,10 @@ nav:hover{
     color: white;
     font-size: 40px;
     border: 2px solid white;
-    padding:20px;
-    letter-spacing: 6px;
+    padding:50px;
+    letter-spacing: 15px;
     z-index: 2;
-    font-family: 'Gentium Basic', serif;
+    font-family: 'Anton', sans-serif;
 
 }
 
