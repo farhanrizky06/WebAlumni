@@ -13,6 +13,11 @@ body, html{
     src: url('fonts/apompadour2.ttf');
 }
 
+@font-face {
+    font-family: 'blacksword';
+    src: url('fonts/Blacksword.otf');
+}
+
 /* Global */
 .container{
     width: 80%;
@@ -111,16 +116,6 @@ nav:hover{
 
 }
 
-
-.pimg2{
-    background-image: url('images/img2.jpeg');
-    min-height: 250px;
-}
-
-.pimg3{
-    background-image: url('images/img3.jpg');
-    min-height: 250px;
-}
 .pimg4{
     background-image: url('images/img1.jpeg');
     min-height: 250px;
@@ -273,8 +268,61 @@ nav:hover{
 }
 .world h2{
     text-align: center;
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.world p{
+    font-family: 'apompadour';
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 40%;
+    margin: auto;
+}
+#hr-world{
+    margin: auto;
+    width: 40%;
+    background-color: #9d1e2f;
+    margin-bottom: 50px;
+}
+.carousel-fixed{
+    height: auto;
+    border: #203257 solid 3px;
+}
+.carousel-item{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    
+}
+.carousel-item img{
+    width: fit-content;
+    max-height: 600px;
+    height: fit-content;
+    size: cover;
+}
+.carousel-caption h1{
+    font-family: 'blacksword'; 
+    font-size: 150px;
+}
 
-
+.elegance h2{
+    text-align: center;
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-top: 250px;
+}
+.hrimg{
+    width: 25%;
+    height: auto;
+    size: cover;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 .readmore1-btn{
     width: 110px;
     align-content: center;
@@ -314,44 +362,6 @@ nav:hover{
     font-size: 37px;
     letter-spacing: 8px;
     text-transform: uppercase;
-}
-#hr-world{
-    margin: auto;
-    width: 40%;
-    background-color: #9d1e2f;
-    margin-bottom: 50px;
-
-}
-.carousel-fixed{
-    height: auto;
-    border: #203257 solid 3px;
-}
-.carousel-item{
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-}
-.carousel-item img{
-    width: fit-content;
-    max-height: 600px;
-    height: auto;
-    size: cover;
-}
-.elegance h2{
-    text-align: center;
-    color: #203257;
-    font-size: 37px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    margin-top: 250px;
-}
-.hrimg{
-    width: 25%;
-    height: auto;
-    size: cover;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /*END OF PHOTOS AND END OF SECTION 3 MEDIA*/
@@ -581,3 +591,4 @@ footer{
 	letter-spacing:3px;
 		}
   }
+
