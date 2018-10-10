@@ -221,108 +221,9 @@ nav:hover{
     margin: auto;
 }
 
-
-
-/*button settings section 1 INTRO*/
-
-
-.introduction .readmore-btn{
-    padding: 15px 5px;
-    font-size: auto;
-    width: 140px;
-    height: 55px;
-    text-align: center;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    margin: 20px 45px;
-    text-transform: uppercase;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.readmore-btn {
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-.readmore-btn a{
-    color: white;
-    text-decoration:none;
-}
-
-.readmore-btn a:hover{
-    color: pink;
-    text-decoration: none;
-    cursor: pointer;
-}
-.readmore-btn a:active {
-    color: #fff;
-    text-decoration: none;
-}
-
 /*The end of section 1 INTRO*/
 
-/*Beginning of section 2*/
-
-.world{
-    text-align: center;
-    margin-top: 250px;
-}
-.world h2{
-    text-align: center;
-    color: #203257;
-    font-size: 37px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-.world p{
-    font-family: 'apompadour';
-    font-size: 20px;
-    letter-spacing: 2px;
-    width: 40%;
-    margin: auto;
-}
-#hr-world{
-    margin: auto;
-    width: 40%;
-    background-color: #9d1e2f;
-    margin-bottom: 50px;
-}
-.carousel-fixed{
-    height: auto;
-    border: #203257 solid 3px;
-}
-.carousel-item{
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-    
-}
-.carousel-item img{
-    width: fit-content;
-    max-height: 600px;
-    height: fit-content;
-    size: cover;
-}
-.carousel-caption h1{
-    font-family: 'blacksword'; 
-    font-size: 150px;
-}
-
-.elegance h2{
-    text-align: center;
-    color: #203257;
-    font-size: 37px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    margin-top: 250px;
-}
-.hrimg{
-    width: 25%;
-    height: auto;
-    size: cover;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
+/*button settings*/
 .readmore1-btn{
     width: 110px;
     align-content: center;
@@ -364,13 +265,151 @@ nav:hover{
     text-transform: uppercase;
 }
 
+.readmore2-btn{
+    width: 110px;
+    align-content: center;
+    margin: auto;
+    
+}
+.readmore2-btn:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+}
+.readmore2-btn a{
+    padding: 5px 5px;
+    text-decoration:none;
+    text-align: center;
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.readmore2-btn a:hover{
+    color: #9d1e2f;
+    background: #fff;
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+/*button setting ends*/
+
+/*Beginning of section 2*/
+
+.world{
+    text-align: center;
+    margin-top: 250px;
+}
+.world h2{
+    text-align: center;
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.world p{
+    font-family: 'apompadour';
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 40%;
+    margin: auto;
+}
+#hr-world{
+    margin: auto;
+    width: 40%;
+    background-color: #9d1e2f;
+    margin-bottom: 50px;
+}
+
+/*CAROUSEL*/
+.carousel-item{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    
+}
+.carousel-item img{
+    width: fit-content;
+    max-height: 600px;
+    height: fit-content;
+    size: cover;
+}
+.carousel-caption h1{
+    font-family: 'blacksword'; 
+    font-size: 150px;
+}
+/*END OF CAROUSEL*/
+
+.elegance h2{
+    text-align: center;
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-top: 250px;
+}
+.hrimg{
+    width: 25%;
+    height: auto;
+    size: cover;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*END OF SECTION 2*/
+/*SECTION 3 LINKAGES*/
+
+.linkages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    color: #203257;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.linkages :hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+    color: #9d1e2f;
+    text-decoration: none;
+}
+
+.linkages a{
+    color: #203257;
+}
+
+#link1{
+    grid-column: 1/2;
+}
+#link2{
+    grid-column: 2/3;
+}
+#link3{
+    grid-column: 3/4;
+}
+#link4{
+    grid-column: 4/5;
+}
+
+
 /*END OF PHOTOS AND END OF SECTION 3 MEDIA*/
 /* The beginning of footer */
 
 footer{
 
     width: 100%;
-    background: #203257;
+    background: #9d1e2f;
     margin: auto;
     padding: 50px 0px;
     text-align: center;
