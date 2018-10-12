@@ -50,10 +50,10 @@ if (typewriter == undefined) {
     if (typewriter.innerHTML == "Alumni") {
       typewriter.innerHTML = "Friends";
     } else if (typewriter.innerHTML == "Friends") {
-      typewriter.innerHTML = "Menthors";
-    } else if (typewriter.innerHTML == "Menthors") {
-      typewriter.innerHTML = "Family";
-    } else if (typewriter.innerHTML == "Family") {
+      typewriter.innerHTML = "Mentors";
+    } else if (typewriter.innerHTML == "Mentors") {
+      typewriter.innerHTML = "Families";
+    } else if (typewriter.innerHTML == "Families") {
       typewriter.innerHTML = "Alumni";
     }
   }, 2500);
