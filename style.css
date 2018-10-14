@@ -9,36 +9,16 @@ body, html{
 } 
 
 #typewriter{
-    
-    
-    letter-spacing: 0px;
-    animation: type 2.5s infinite, cursor 500ms infinite;
-    border: 2px solid transparent;
-    border-right-color: #000;
+    font-size: 1.5em;
+    letter-spacing: 5px;
     overflow: hidden;
     margin: 0 auto;
 }
 
-@keyframes type{
-    0%{
-        width: 0;
-    }
-    40%{
-        width: 3.5em;
-    }
-    60%{
-        width: 3.5em;
-    }
-    80%{
-        width: 3em;
-    }
-    95%{
-        width: 0;
-    }
-    100%{
-        width: 0;
-        
-    }
+#typewriterText{
+    border: 2px solid transparent;
+    border-right-color: #000;
+    animation: cursor 500ms infinite;
 }
 
 @keyframes cursor{
