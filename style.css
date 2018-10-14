@@ -58,7 +58,6 @@ body, html{
     margin:auto;
     overflow: hidden;
 }
-
 /*Header*/
 header{
     margin:0;
@@ -705,6 +704,12 @@ footer{
 }
 
 @media(max-width:767px){
+
+	.theQuote{
+		transition:3s;
+	font-size:40px;
+	letter-spacing:3px;
+    }
     .box{
         display: none;
         box-shadow: none;
@@ -712,20 +717,6 @@ footer{
     }
     #box2{
         grid-column: 1/4;
-        margin: 0px 0px 0px 0px;
-    
-    }
-}
-
-
-@media(max-width:700px){
-    .theTextBox{
-        padding: 20px;
-        font-size: 30px;
-        letter-spacing: 4px;
-    }
-  
-    #box2{
         padding: 20px;
         background-color: #9d1e2f;
         color: white;
@@ -737,8 +728,18 @@ footer{
         border: #9d1e2f solid 3px;
         border-radius: 5px;
         width: 100%;
-        margin: auto;
+        margin: auto;    
     }
+}
+
+
+@media(max-width:700px){
+    .theTextBox{
+        padding: 20px;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+  
     .remark{
         display: grid;
         grid-template-columns: 1fr,1fr;
@@ -747,6 +748,8 @@ footer{
         width: 90%;
         margin: auto;
         height: max-content;
+        margin-bottom: -50px;
+    
     }
     .remark img{
         width: 100%;
@@ -859,15 +862,6 @@ footer{
 	letter-spacing:3px;
 }
 
-  @media (max-width: 767px) {
-
-	.theQuote{
-		transition:3s;
-	font-size:40px;
-	letter-spacing:3px;
-    }
-}
-
   @media (max-width: 400px) {
 
     .theTextBox{
@@ -881,4 +875,8 @@ footer{
 	letter-spacing:3px;
 		}
   }
-
+@media(max-width: 320px){
+    .remark{
+        margin-bottom: 0px;
+    }
+}
