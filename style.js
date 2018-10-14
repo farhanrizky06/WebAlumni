@@ -41,20 +41,60 @@ if (landingPageText == undefined) {
   }, 500);
 }
 
-var typewriter = document.getElementById("typewriter");
+var typewriter = document.getElementById("typewriterText");
+
+backspaceOnce = theStr => {
+  prevStr = theStr;
+  if (prevStr.length == 0) {
+  } else {
+    theStr = prevStr.substring(0, prevStr.length - 1);
+  }
+  return theStr;
+};
+
+typeOnce = (theStr, theNewStr) => {
+  if (theStr.length == theNewStr.length) {
+  } else {
+    theStr = theNewStr.substring(0, theStr.length + 1);
+  }
+  return theStr;
+};
+
+deleteAndType = newStr => {
+  let isDeleted = false;
+  let isDeletedAndTyped = false;
+  let theInterval = setInterval(() => {
+    if (isDeleted != true) {
+      if (typewriter.innerHTML != 0) {
+        typewriter.innerHTML = backspaceOnce(typewriter.innerHTML);
+      } else {
+        isDeleted = true;
+      }
+    } else {
+      if (typewriter.innerHTML.length != newStr.length) {
+        typewriter.innerHTML = typeOnce(typewriter.innerHTML, newStr);
+      } else {
+        clearInterval(theInterval);
+      }
+    }
+  }, 200);
+};
 
 if (typewriter == undefined) {
   console.log("error typewriter");
 } else {
+  if (typewriter.innerHTML == "Alumni") {
+    deleteAndType("Friends");
+  }
   setInterval(() => {
     if (typewriter.innerHTML == "Alumni") {
-      typewriter.innerHTML = "Friends";
+      deleteAndType("Friends");
     } else if (typewriter.innerHTML == "Friends") {
-      typewriter.innerHTML = "Mentors";
-    } else if (typewriter.innerHTML == "Mentors") {
-      typewriter.innerHTML = "Families";
+      deleteAndType("Families");
     } else if (typewriter.innerHTML == "Families") {
-      typewriter.innerHTML = "Alumni";
+      deleteAndType("Mentors");
+    } else if (typewriter.innerHTML == "Mentors") {
+      deleteAndType("Alumni");
     }
-  }, 2500);
+  }, 3600);
 }
