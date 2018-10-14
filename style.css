@@ -25,10 +25,10 @@ body, html{
         width: 0;
     }
     40%{
-        width: 4em;
+        width: 3.5em;
     }
     60%{
-        width: 4em;
+        width: 3.5em;
     }
     80%{
         width: 3em;
@@ -526,7 +526,7 @@ nav:hover{
 
 footer{
     width: 100%;
-    background: #9d1e2f;
+    background: #000;
     margin: auto;
     padding: 50px 0px;
     text-align: center;
