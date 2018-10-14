@@ -387,9 +387,9 @@ nav:hover{
     
 }
 .readmore2-btn:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+    -webkit-transform: scale(0.92);
+    -ms-transform: scale(0.92);
+    transform: scale(0.92);
     transition-duration: 0.5s;
 }
 .readmore2-btn a{
@@ -691,9 +691,9 @@ footer{
         grid-gap: 1em;
     }
     .linkages :hover{
-        -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8);
+        -webkit-transform: scale(0.92);
+        -ms-transform: scale(0.92);
+        transform: scale(0.92);
         transition-duration: 0.5s;
         color: #9d1e2f;
         text-decoration: none;
@@ -831,9 +831,9 @@ footer{
         grid-gap: 1em;
     }
     .linkages :hover{
-        -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8);
+        -webkit-transform: scale(0.92);
+        -ms-transform: scale(0.92);
+        transform: scale(0.92);
         transition-duration: 0.5s;
         color: #9d1e2f;
         text-decoration: none;
