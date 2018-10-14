@@ -32,6 +32,9 @@ body, html{
     80%{
         width: 3em;
     }
+    95%{
+        width: 0;
+    }
     100%{
         width: 0;
         
