@@ -6,6 +6,7 @@ body, html{
     font-weight: 400;
     line-height: 1.8em;
     color: white;
+    background-image: url('images/black2.jpg');
 } 
 
 #typewriter{
@@ -156,12 +157,7 @@ nav:hover{
 }
 
 /*end of PARALLAX images*/
-/*
-.section{
-    text-align: center;
-    padding: 50px 50px; 
-    background-color: white;
-} */
+
 
 .ptext{
     position: absolute;
@@ -231,7 +227,7 @@ nav:hover{
 	font-style:italic;
     text-shadow:2px 2px 1px #9d1e2f;
     text-align: center;
-	
+	color: white;
 }
 .theQuote{
 	transition:3s;
@@ -284,9 +280,15 @@ nav:hover{
 }
 .remark img{
     width: 100%;
-    max-height: 200px;
+    max-height: 300px;
     height: auto;
     size: cover;
+    border: transparent solid 1px;
+    border-radius: 3px;
+}
+.remark h5{
+    font-family: 'blacksword';
+    color: rosybrown;
 }
 #remark1{
     grid-column: 1/2;
@@ -296,7 +298,7 @@ nav:hover{
 #remark2{
     grid-column: 2/3;
     grid-row: 1/2;
-    color: #494949;
+    color: white;
     font-size: 20px;
 }
 #remark3{
@@ -311,7 +313,7 @@ nav:hover{
 #remark5{
     grid-column: 3/4;
     grid-row: 2/3;
-    color: #494949;
+    color: white;
     font-size: 20px;
 }
 #remark6{
@@ -386,7 +388,7 @@ nav:hover{
 
 .readmore2-btn a:hover{
     color: #9d1e2f;
-    background: #fff;
+    background: transparent;
     opacity: 1;
     text-decoration: none;
     cursor: pointer;
@@ -403,7 +405,7 @@ nav:hover{
 }
 .world h2{
     text-align: center;
-    color: #203257;
+    color: white;
     font-size: 37px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -414,7 +416,7 @@ nav:hover{
     letter-spacing: 2px;
     width: 40%;
     margin: auto;
-    color: #494949;
+    color: white;
 }
 #hr-world{
     margin: auto;
@@ -445,7 +447,7 @@ nav:hover{
 
 .elegance h2{
     text-align: center;
-    color: #203257;
+    color: white;
     font-size: 37px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -471,7 +473,7 @@ nav:hover{
     height: auto;
     margin-top: 50px;
     justify-content: space-evenly;
-    color: #203257;
+    color: white;
     margin: auto;
     text-align: center;
     margin-bottom: 150px;
@@ -481,25 +483,48 @@ nav:hover{
     -ms-transform: scale(0.92);
     transform: scale(0.92);
     transition-duration: 0.5s;
-    color: #9d1e2f;
+    color: white;
     text-decoration: none;
 }
 
-.linkages a{
-    color: #203257;
-}
+
 
 #link1{
     grid-column: 1/2;
 }
+#link1 a{
+    color: #203257;
+}
+#link1 h3{
+    color: white;
+}
 #link2{
     grid-column: 2/3;
+}
+#link2 a{
+    color: #9d1e2f;
+}
+
+#link2 h3{
+    color: white;
 }
 #link3{
     grid-column: 3/4;
 }
+#link3 a{
+    color: #9d1e2f;
+}
+#link3 h3{
+    color: white;
+}
 #link4{
     grid-column: 4/5;
+}
+#link4 a{
+    color: #203257;
+}
+#link4 h3{
+    color: white;
 }
 /* END OF SECTION 3*/
 
@@ -508,7 +533,7 @@ nav:hover{
 
 footer{
     width: 100%;
-    background: #000;
+    background: #203257;
     margin: auto;
     padding: 50px 0px;
     text-align: center;
@@ -570,6 +595,16 @@ footer{
 /*footer ends*/
 
 /* Media Queries */
+@media(max-width:1025px){
+    .hrimg{
+        width: 50%;
+        height: auto;
+        size: cover;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 @media(max-width:1000px){
 	
 
@@ -578,6 +613,14 @@ footer{
 		font-size:35px;
 	letter-spacing:3px;}
 
+    .hrimg{
+        width: 40%;
+        height: auto;
+        display: block;
+        size: cover;
+        margin-right: auto;
+        margin-left: auto;
+    }
     #box2{
         padding: 50px;
         background-color: #9d1e2f;
@@ -591,6 +634,7 @@ footer{
         border-radius: 5px;
         width: 80%;
         margin: auto;
+        margin-bottom: -50px;
     }    
     
     .remark{
@@ -606,6 +650,8 @@ footer{
         max-height: 300px;
         height: auto;
         size: cover;
+        border: transparent solid 1px;
+        border-radius: 3px;
     }
     #remark1{
         grid-column: 1/2;
@@ -615,7 +661,7 @@ footer{
     #remark2{
         grid-column: 2/4;
         grid-row: 1/2;
-        color: #494949;
+        color: lightgrey;
         font-size: 20px;
     }
     #remark3{
@@ -629,7 +675,7 @@ footer{
     #remark5{
         grid-column: 1/3;
         grid-row: 4/5;
-        color: #494949;
+        color: lightgrey;
         font-size: 20px;
     }
     #remark6{
@@ -637,16 +683,13 @@ footer{
         grid-row: 4/5;
     }
 
-    .carousel-fixed{
-        display: none;
-    }
     .world{
         text-align: center;
         margin-top: 150px;
     }
     .world h2{
         text-align: center;
-        color: #203257;
+        color: white;
         font-size: 37px;
         letter-spacing: 8px;
         text-transform: uppercase;
@@ -657,7 +700,7 @@ footer{
         letter-spacing: 2px;
         width: 80%;
         margin: auto;
-        color: #494949;
+        color: lightgrey;
     }
     .linkages{
         display: grid;
@@ -678,7 +721,7 @@ footer{
         -ms-transform: scale(0.92);
         transform: scale(0.92);
         transition-duration: 0.5s;
-        color: #9d1e2f;
+        color: ;
         text-decoration: none;
     }
     
@@ -710,6 +753,14 @@ footer{
 	font-size:40px;
 	letter-spacing:3px;
     }
+    .hrimg{
+        width: 70%;
+        height: auto;
+        size: cover;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .box{
         display: none;
         box-shadow: none;
@@ -729,6 +780,11 @@ footer{
         border-radius: 5px;
         width: 100%;
         margin: auto;    
+        margin-bottom: -50px;
+        margin-top: -50px;
+    }
+    .carousel-fixed{
+        display: none;
     }
 }
 
@@ -756,6 +812,8 @@ footer{
         max-height: 300px;
         height: auto;
         size: cover;
+        border: transparent solid 1px;
+        border-radius: 3px; 
     }
     #remark1{
         display: none;
@@ -763,7 +821,7 @@ footer{
     #remark2{
         grid-column: 1/4;
         grid-row: 1/3;
-        color: #494949;
+        color: lightgrey;
         font-size: 20px;
     }
     #remark3{
@@ -777,7 +835,7 @@ footer{
     #remark5{
         grid-column: 1/4;
         grid-row: 5/7;
-        color: #494949;
+        color: lightgrey;
         font-size: 20px;
     }
     #remark6{
@@ -789,7 +847,7 @@ footer{
     }
     .world h2{
         text-align: center;
-        color: #203257;
+        color: white;
         font-size: 37px;
         letter-spacing: 8px;
         text-transform: uppercase;
@@ -800,7 +858,7 @@ footer{
         letter-spacing: 2px;
         width: 90%;
         margin: auto;
-        color: #494949;
+        color: lightgrey;
     }
 
     .linkages{
@@ -822,7 +880,7 @@ footer{
         -ms-transform: scale(0.92);
         transform: scale(0.92);
         transition-duration: 0.5s;
-        color: #9d1e2f;
+        color: rosybrown;
         text-decoration: none;
     }
     
