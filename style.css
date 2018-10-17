@@ -31,6 +31,8 @@ body, html{
     }
 }
 
+/*fonts*/
+
 @font-face {
     font-family: 'apompadour';
     src: url('fonts/apompadour2.ttf');
@@ -52,112 +54,6 @@ body, html{
     font-family: 'brooklyn';
     src: url('fonts/brooklyn.otf');
 }
-
-/* Global 
-.container{
-    width: 80%;
-    margin:auto;
-    overflow: hidden;
-}
-/*Header*/
-header{
-    margin:0;
-}
-
-nav{
-    transition: 0.8s;
-    color:white;
-}
-
-nav:hover{
-    background-color: rgb(32, 50, 87); 
-    color:aliceblue;
-    transition: 0.8s;
-}
-
-.nav-link{
-    color: white !important;
-}
-
-.navbar-brand{
-    color: white !important;   
-}
-
-.btn-outline-dark{
-    color: white !important;
-    border-color: white !important;
-}
-
-.navbar-light .navbar-toggler-icon{
-    background-color: white !important;
-}
-
-.navbar-toggler{
-    background-color: white !important;
-}
-
-
-/*HEADER end*/
-/* Parallax Images*/
-
-.pimg1, .pimg4{
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-/*fixed = parallax
-  scroll = normal
-  */
-
-    background-attachment: fixed;
-}
-
-.theLandingPage{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-image: url(https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position:center;
-    background-size: cover;
-    z-index: 0;
-}
-.theBackground{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-image: url(https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position:center;
-    background-size: cover;
-    z-index: 1;
-    filter: blur(7px);
-    border:black 3px solid;
-    
-}
-.theTextBox{
-    transition: 1s;
-    opacity: 0;
-    margin: 0 auto;
-    color: white;
-    font-size: 35px;
-    border: 2px solid white;
-    padding: 50px;
-    letter-spacing: 10px;
-    z-index: 2;
-    font-family: 'Bangers', cursive;
-    text-shadow: 2px 2px black;
-    text-align: center;
-}
-
-.pimg4{
-    background-image: url('images/img1.jpeg');
-    min-height: 250px;
-    padding-bottom: 50px;
-}
-
-/*end of PARALLAX images*/
-
 
 .ptext{
     position: absolute;
@@ -204,131 +100,7 @@ nav:hover{
     background-color: transparent;
 }
 
-.block{
-    float: left;
-    width:33.3%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-/*row vertical, column horizontal effect*/
-#box1{
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    padding: 50px;
-	
-	
-}
-
-.theQuote, .theQuoteW{
-	font-family: 'Anton', sans-serif;
-	font-style:italic;
-    text-shadow:2px 2px 1px #9d1e2f;
-    text-align: center;
-	color: white;
-}
-.theQuote{
-	transition:3s;
-	font-size:55px;
-	letter-spacing:3px;
-}
-
-.introduction{
-    margin: auto;
-    display: grid;
-    width: 80%;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-rows: minmax(100px,auto);
-    text-align: left;
-    justify-items: stretch;
-    justify-content: flex-start;
-    align-items: stretch;
- }
- .box{
-    grid-column:1/3;
-    margin: 50px 0px 50px 0px; 
-    background-color: #f12b37;
-    box-shadow: 100px 60px #ccc;
-    grid-row: 1/7;
- }
-
-#box2{
-    padding: 50px;
-    background-color: #9d1e2f;
-    opacity: 0.7;
-    border: #9d1e2f solid 3px;
-    border-radius: 5px;
-    margin: auto;
-    color: white;
-    margin: 0px 0px 0px 100px;
-    grid-column: 1/4;
-    grid-row:2/6;
-}
-
-/*The end of section 1 INTRO*/
-
-/*REMARKS*/
-.random{
-    background-color: white;
-    
-}
-.remark{
-    display: grid;
-    grid-template-columns: 1fr,1fr,2fr;
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 1em;
-    width: 80%;
-    margin: auto;
-}
-.remark img{
-    width: 100%;
-    max-height: 300px;
-    height: auto;
-    size: cover;
-    border: transparent solid 1px;
-    border-radius: 3px;
-}
-.remark h3{
-    color: lightskyblue;
-    font-family: 'heimdal';
-}
-.remark h5{
-    font-family: 'blacksword';
-    color: rosybrown;
-}
-#remark1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    text-align: end;
-}
-#remark2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    color: white; /*colatera1*/
-    font-size: 20px;
-}
-#remark3{
-    grid-column: 3/5;
-    grid-row: 1/2;
-}
-#remark4{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    
-}
-#remark5{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    color: white;
-    font-size: 20px;
-}
-#remark6{
-    grid-column: 4/5;
-    grid-row: 2/3;
-}
-
+/*fonts end*/
 
 /*button settings*/
 .readmore1-btn{
@@ -404,7 +176,257 @@ nav:hover{
 }
 /*button setting ends*/
 
-/*Beginning of section 2*/
+/*Header*/
+header{
+    margin:0;
+}
+
+nav{
+    transition: 0.8s;
+    color:white;
+}
+
+nav:hover{
+    background-color: rgb(32, 50, 87); 
+    color:aliceblue;
+    transition: 0.8s;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.navbar-brand{
+    color: white !important;   
+}
+
+.btn-outline-dark{
+    color: white !important;
+    border-color: white !important;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-color: white !important;
+}
+
+.navbar-toggler{
+    background-color: white !important;
+}
+
+/*HEADER end*/
+
+/* Parallax Images*/
+
+.pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+/*fixed = parallax
+  scroll = normal
+  */
+
+    background-attachment: fixed;
+    background-image: url('images/img1.jpeg');
+    min-height: 250px;
+    padding-bottom: 50px;
+}
+
+/*parallax end*/
+
+/*the landscape section*/
+
+.theLandingPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position:center;
+    background-size: cover;
+    z-index: 0;
+}
+.theBackground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position:center;
+    background-size: cover;
+    z-index: 1;
+    filter: blur(7px);
+    border:black 3px solid;
+}
+.theTextBox{
+    transition: 1s;
+    opacity: 0;
+    margin: 0 auto;
+    color: white;
+    font-size: 35px;
+    border: 2px solid white;
+    padding: 50px;
+    letter-spacing: 10px;
+    z-index: 2;
+    font-family: 'Bangers', cursive;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+/*end of landscape section*/
+
+/* QUOTE AND INTRO SECTION */
+
+#box1{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 50px;
+	
+	
+}
+
+.theQuote, .theQuoteW{
+	font-family: 'Anton', sans-serif;
+	font-style:italic;
+    text-shadow:2px 2px 1px #9d1e2f;
+    text-align: center;
+	color: white;
+}
+.theQuote{
+	transition:3s;
+	font-size:55px;
+	letter-spacing:3px;
+}
+
+.introduction{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    text-align: left;
+    justify-items: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+ }
+ .box{
+    grid-column:1/3;
+    margin: 50px 0px 50px 0px; 
+    background-color: #f12b37;
+    box-shadow: 100px 60px #ccc;
+    grid-row: 1/7;
+ }
+
+#box2{
+    padding: 50px;
+    background-color: #9d1e2f;
+    opacity: 0.7;
+    border: #9d1e2f solid 3px;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    margin: 0px 0px 0px 100px;
+    grid-column: 1/4;
+    grid-row:2/6;
+}
+
+/*The end of section 1 INTRO*/
+ 
+
+/* HEADLINE AND HR */
+.elegance h2{
+    text-align: center;
+    color: white;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+.hrimg{
+    width: 25%;
+    height: auto;
+    size: cover;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.elegance-light h2{
+    text-align: center;
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/*REMARKS SECTION 2 */
+
+.random{
+    background-color: white;
+    border: white solid 1px;
+    border-radius: 3px;
+}
+.remark{
+    display: grid;
+    grid-template-columns: 1fr,1fr,2fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1em;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.remark h3{
+    color: lightskyblue;
+    font-family: 'heimdal';
+}
+.remark h5{
+    font-family: 'blacksword';
+    color: rosybrown;
+}
+#remark1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: end;
+}
+#remark2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #494949; /*colatera1*/
+    font-size: 20px;
+}
+#remark3{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-image: url('images/hungary.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: transparent solid 1px;
+    border-radius: 3px;
+}
+#remark4{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url('images/hungary.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: transparent solid 1px;
+    border-radius: 3px;
+}
+#remark5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: #494949;
+    font-size: 20px;
+}
+#remark6{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+/*Beginning of section 3 world*/
 
 .world{
     text-align: center;
@@ -433,7 +455,6 @@ nav:hover{
     margin-bottom: 50px;
 }
 
-/*CAROUSEL*/
 .carousel-item{
     width: 100%;
     height: auto;
@@ -450,28 +471,9 @@ nav:hover{
     font-family: 'blacksword'; 
     font-size: 150px;
 }
-/*END OF CAROUSEL*/
+/*END OF SECTION 3*/
 
-
-.elegance h2{
-    text-align: center;
-    color: white;
-    font-size: 37px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    margin-top: 150px;
-}
-.hrimg{
-    width: 25%;
-    height: auto;
-    size: cover;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/*END OF SECTION 2*/
-/*SECTION 3 LINKAGES*/
+/*SECTION 4 LINKAGES*/
 
 .linkages{
     display: grid;
@@ -534,7 +536,7 @@ nav:hover{
 #link4 h3{
     color: white;
 }
-/* END OF SECTION 3*/
+/* END OF SECTION 4 LINKAGEs*/
 
 
 /* The beginning of footer */
@@ -602,8 +604,12 @@ footer{
 	}
 }
 
-
 /*footer ends*/
+
+
+
+
+
 
 /* Media Queries */
 @media(max-width:1025px){
@@ -656,14 +662,6 @@ footer{
         width: 80%;
         margin: auto;
     }
-    .remark img{
-        width: 100%;
-        max-height: 300px;
-        height: auto;
-        size: cover;
-        border: transparent solid 1px;
-        border-radius: 3px;
-    }
     #remark1{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -672,8 +670,6 @@ footer{
     #remark2{
         grid-column: 2/4;
         grid-row: 1/2;
-        color: lightgrey;
-        font-size: 20px;
     }
     #remark3{
         grid-column: 1/4;
@@ -686,8 +682,6 @@ footer{
     #remark5{
         grid-column: 1/3;
         grid-row: 4/5;
-        color: lightgrey;
-        font-size: 20px;
     }
     #remark6{
         grid-column: 3/4;
