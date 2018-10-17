@@ -6,10 +6,11 @@ body, html{
     font-weight: 400;
     line-height: 1.8em;
     color: white;
+    background-image: url('images/black2.jpg');
 }
 
 /* Global */
-.container{
+.section{
     width: 80%;
     margin:auto;
     overflow: hidden;
@@ -71,7 +72,6 @@ nav:hover{
 .section{
     text-align: center;
     padding: 50px 50px; 
-    background-color: white;
 }
 
 .ptext{
@@ -121,6 +121,23 @@ nav:hover{
     background-color: transparent;
 }
 
+.elegance h2{
+    text-align: center;
+    color:#203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+.hrimg{
+    width: 25%;
+    height: auto;
+    size: cover;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 /*The end of the page settings*/
 
@@ -134,6 +151,7 @@ nav:hover{
 }
 .date h5{
     text-align: right;
+    color: aliceblue;
 }
 
 .fraction{
@@ -185,7 +203,7 @@ nav:hover{
     background-position: center;
     color: white;
     text-align: justify;
-	text-decoration: none;
+    text-decoration: none;
 }
 #box3{
     grid-column: 4/5;
@@ -197,7 +215,7 @@ nav:hover{
     color: white;
     text-align: justify;
     background-size: cover;
-	text-decoration: none;
+    text-decoration: none;
 }
 #box4{
     grid-column: 3/4;
@@ -209,7 +227,7 @@ nav:hover{
     color: white;
     text-align: justify;
     background-size: cover;
-	text-decoration: none;
+    text-decoration: none;
 }
 #box5{
     grid-column: 4/5;
@@ -221,7 +239,7 @@ nav:hover{
     color: white;
     text-align: justify;
     background-size: cover;
-	text-decoration: none;
+    text-decoration: none;
 }
 #logo-school{
     color: red;

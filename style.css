@@ -270,6 +270,10 @@ nav:hover{
 /*The end of section 1 INTRO*/
 
 /*REMARKS*/
+.random{
+    background-color: white;
+    
+}
 .remark{
     display: grid;
     grid-template-columns: 1fr,1fr,2fr;
@@ -286,6 +290,10 @@ nav:hover{
     border: transparent solid 1px;
     border-radius: 3px;
 }
+.remark h3{
+    color: lightskyblue;
+    font-family: 'heimdal';
+}
 .remark h5{
     font-family: 'blacksword';
     color: rosybrown;
@@ -298,7 +306,7 @@ nav:hover{
 #remark2{
     grid-column: 2/3;
     grid-row: 1/2;
-    color: white;
+    color: white; /*colatera1*/
     font-size: 20px;
 }
 #remark3{
@@ -493,7 +501,7 @@ nav:hover{
     grid-column: 1/2;
 }
 #link1 a{
-    color: #203257;
+    color: lightskyblue;
 }
 #link1 h3{
     color: white;
@@ -502,7 +510,7 @@ nav:hover{
     grid-column: 2/3;
 }
 #link2 a{
-    color: #9d1e2f;
+    color: rosybrown;
 }
 
 #link2 h3{
@@ -512,7 +520,7 @@ nav:hover{
     grid-column: 3/4;
 }
 #link3 a{
-    color: #9d1e2f;
+    color: rosybrown;
 }
 #link3 h3{
     color: white;
@@ -521,7 +529,7 @@ nav:hover{
     grid-column: 4/5;
 }
 #link4 a{
-    color: #203257;
+    color: lightskyblue;
 }
 #link4 h3{
     color: white;
