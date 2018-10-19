@@ -1,7 +1,7 @@
 window.addEventListener("scroll", function() {
   if (this.pageYOffset > 100) {
     document.getElementsByClassName("navbar")[0].style.backgroundColor =
-      "#203257";
+      "white";
   } else {
     document.getElementsByClassName("navbar")[0].style.backgroundColor = "";
   }
