@@ -269,7 +269,7 @@ nav:hover {
 .theQuote {
   font-family: "Anton", sans-serif;
   font-style: italic;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+  text-shadow: 1.3px 1.3px 1px rgba(0, 0, 0, 0.6);
   text-align: center;
   color: #9d1e2f;
   transition: 3s;
@@ -304,15 +304,6 @@ nav:hover {
 
 /*The end of section 1 INTRO*/
 
-/* HEADLINE AND HR */
-.elegance h2 {
-  text-align: center;
-  color: white;
-  font-size: 37px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  margin-top: 150px;
-}
 .hrimg {
   width: 25%;
   height: auto;
@@ -419,111 +410,148 @@ nav:hover {
 
 /*Beginning of section 3 world*/
 
-.world {
-  text-align: center;
-  margin-top: 250px;
-  margin-bottom: 40px;
+.carousel-fixed {
+  width: 100%;
+  height: 100%;
 }
-.world h2 {
-  text-align: center;
-  color: white;
-  font-size: 37px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
+
+#carouselExampleFade {
+  width: 100%;
+  height: 100%;
 }
-.world p {
-  font-family: "apompadour";
-  font-size: 20px;
-  letter-spacing: 2px;
-  width: 40%;
-  margin: auto;
-  color: white;
-}
-#hr-world {
-  margin: auto;
-  width: 40%;
-  background-color: #9d1e2f;
-  margin-bottom: 50px;
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item {
   width: 100%;
-  height: auto;
-  max-height: 600px;
+  height: 100%;
 }
-.carousel-item img {
-  width: fit-content;
-  max-height: 600px;
-  height: fit-content;
-  size: cover;
+.caroCaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.carousel-caption h1 {
+.caroCaption h1 {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  color: white;
   font-family: "blacksword";
   font-size: 150px;
+  margin: 0 auto;
+  bottom: 20px;
 }
+
+#carouselBegin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+
+.carouselBeginContent {
+  text-align: center;
+}
+
+.carouselBeginContent .btn-info {
+  margin: 30px auto;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+#carouselBegin span {
+  font-size: 80px;
+  margin: 30px auto;
+}
+
 /*END OF SECTION 3*/
 
 /*SECTION 4 LINKAGES*/
 
+.connected {
+  padding: 60px;
+}
+
+.elegance {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.elegance h1 {
+  font-size: 45px;
+  margin: 20px auto;
+}
+
 .linkages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(100px, auto);
   width: 80%;
-  height: auto;
-  margin-top: 50px;
-  justify-content: space-evenly;
-  color: white;
-  margin: auto;
   text-align: center;
-  margin-bottom: 150px;
+  margin: 0 auto;
+  color: #9d1e2f;
 }
-.linkages :hover {
-  -webkit-transform: scale(0.92);
-  -ms-transform: scale(0.92);
-  transform: scale(0.92);
-  transition-duration: 0.5s;
-  color: white;
-  text-decoration: none;
+
+#link1 svg,
+#link2 svg,
+#link3 svg,
+#link4 svg {
+  color: aliceblue !important;
+  margin: 0 auto;
+}
+
+.boxForSvg {
+  background: #9d1e2f;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: solid 5px rgba(0, 0, 0, 0.2);
+}
+
+#link1:hover,
+#link2:hover,
+#link3:hover,
+#link4:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
 }
 
 #link1 {
-  grid-column: 1/2;
-}
-#link1 a {
-  color: lightskyblue;
-}
-#link1 h3 {
-  color: white;
-}
-#link2 {
-  grid-column: 2/3;
-}
-#link2 a {
-  color: rosybrown;
+  grid-column: span 1;
 }
 
-#link2 h3 {
-  color: white;
-}
-#link3 {
-  grid-column: 3/4;
-}
-#link3 a {
-  color: rosybrown;
-}
-#link3 h3 {
-  color: white;
-}
-#link4 {
-  grid-column: 4/5;
-}
+#link1 a,
+#link2 a,
+#link3 a,
 #link4 a {
-  color: lightskyblue;
+  color: #9d1e2f;
+  text-decoration: none;
 }
-#link4 h3 {
-  color: white;
+
+#link2 {
+  grid-column: span 1;
 }
+
+#link3 {
+  grid-column: span 1;
+}
+
+#link4 {
+  grid-column: span 1;
+}
+
 /* END OF SECTION 4 LINKAGEs*/
 
 /* The beginning of footer */
@@ -604,6 +632,10 @@ footer {
   }
 }
 @media (max-width: 1000px) {
+  .caroCaption h1 {
+    font-size: 120px;
+  }
+
   .theQuote {
     transition: 3s;
     font-size: 45px;
@@ -643,7 +675,7 @@ footer {
   }
   .world h2 {
     text-align: center;
-    color: white;
+
     font-size: 37px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -654,48 +686,12 @@ footer {
     letter-spacing: 2px;
     width: 80%;
     margin: auto;
-    color: lightgrey;
   }
   .linkages {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr, 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 80%;
-    height: auto;
-    margin-top: 50px;
-    justify-content: space-evenly;
-    color: #203257;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 150px;
-    grid-gap: 1em;
-  }
-  .linkages :hover {
-    -webkit-transform: scale(0.92);
-    -ms-transform: scale(0.92);
-    transform: scale(0.92);
-    transition-duration: 0.5s;
-    color: ;
-    text-decoration: none;
-  }
-
-  #link1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  #link2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  #link3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: 50px;
-  }
-  #link4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 50px;
   }
 }
 
@@ -739,9 +735,6 @@ footer {
   .elegance-light h2 {
     font-size: 25px;
   }
-  .carousel-fixed {
-    display: none;
-  }
 }
 
 @media (max-width: 700px) {
@@ -757,7 +750,7 @@ footer {
   }
   .world h2 {
     text-align: center;
-    color: white;
+
     font-size: 37px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -768,51 +761,38 @@ footer {
     letter-spacing: 2px;
     width: 90%;
     margin: auto;
-    color: lightgrey;
+  }
+  .carousel-fixed {
+    width: 100%;
+    height: 50%;
   }
 
-  .linkages {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr, 1fr;
-    width: 80%;
-    height: auto;
-    margin-top: 50px;
-    justify-content: space-evenly;
-    color: #203257;
-    margin: auto;
+  .carousel-caption h1 {
+    font-family: "blacksword";
+    font-size: 70px;
+  }
+
+  #carouselBegin {
+    width: 100%;
+    height: 50%;
+  }
+
+  .carouselBeginContent {
     text-align: center;
-    margin-bottom: 150px;
-    grid-gap: 1em;
-  }
-  .linkages :hover {
-    -webkit-transform: scale(0.92);
-    -ms-transform: scale(0.92);
-    transform: scale(0.92);
-    transition-duration: 0.5s;
-    color: rosybrown;
-    text-decoration: none;
   }
 
-  #link1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-top: 20px;
+  .carouselBeginContent .btn-info {
+    margin: 20px auto;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: white;
+    color: black;
   }
-  #link2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 20px;
-  }
-  #link3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: 20px;
-  }
-  #link4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 20px;
+
+  #carouselBegin span {
+    font-size: 60px;
+    margin: 20px auto;
   }
 }
 
@@ -820,6 +800,10 @@ footer {
   .remark {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .caroCaption h1 {
+    font-size: 70px;
   }
 
   .remarkContent {
@@ -885,6 +869,27 @@ footer {
     font-size: 15px;
   }
 }
+
+@media (max-width: 500px) {
+  .connected {
+    padding: 30px;
+  }
+  .linkages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    grid-gap: 30px;
+  }
+
+  .elegance h1 {
+    font-size: 25px;
+  }
+  .caroCaption h1 {
+    font-size: 55px;
+  }
+}
+
 @media (max-width: 400px) {
   .theTextBox {
     padding: 10px;
@@ -900,10 +905,28 @@ footer {
     font-size: 13px;
     padding: 22px;
   }
+  .carouselBeginContent .btn-info {
+    margin: 20px auto;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border-color: white;
+    color: black;
+  }
+
+  #carouselBegin span {
+    font-size: 30px;
+    margin: 20px auto;
+  }
 }
 @media (max-width: 320px) {
   #box2 {
     font-size: 12px;
     padding: 20px;
   }
+}
+
+.justBlock h1 {
+  display: block !important;
+  position: absolute;
 }

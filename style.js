@@ -98,3 +98,21 @@ if (typewriter == undefined) {
     }
   }, 3600);
 }
+
+var beginCarouselButton = document.getElementById("carouselBeginContentButton");
+var beginCarousel = document.getElementById("carouselBegin");
+
+fade = item => {
+  item.style.opacity = 0;
+};
+
+gone = item => {
+  item.style.display = "none";
+};
+
+beginCarouselButton.addEventListener("click", () => {
+  fade(beginCarousel);
+  setTimeout(() => {
+    gone(beginCarousel);
+  }, 1000);
+});
