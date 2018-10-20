@@ -5,7 +5,40 @@ body, html{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     line-height: 1.8em;
-    background-color: aliceblue;
+    color: white;
+    background-image: url('images/black2.jpg');
+} 
+
+/* FONTS */
+@font-face{
+    font-family: 'heroesassamble2';
+    src: url('fonts/heroesassemble2.ttf');
+}
+
+@font-face{
+    font-family: 'airstrikeb3d';
+    src: url('fonts/airstrikeb3d.ttf');
+}
+@font-face {
+    font-family: 'apompadour';
+    src: url('fonts/apompadour2.ttf');
+}
+
+@font-face {
+    font-family: 'blacksword';
+    src: url('fonts/Blacksword.otf');
+}
+@font-face{
+    font-family: 'amethyst';
+    src: url('fonts/Amethyst.ttf');
+}
+@font-face{
+    font-family: 'heimdal';
+    src: url('fonts/Heimdal.ttf');
+}
+@font-face{
+    font-family: 'brooklyn';
+    src: url('fonts/brooklyn.otf');
 }
 
 /* Global */
@@ -16,60 +49,87 @@ body, html{
 }
 
 /*Header*/
-header{
-    margin:0;
-}
-
-nav{
+header {
+    margin: 0;
+  }
+  
+  nav {
     transition: 0.8s;
-}
-
-nav:hover{
-    background-color: #f12b37; 
-    color:aliceblue;
+    color: white;
+  }
+  
+  nav:hover {
+    background-color: white;
+    color: aliceblue;
     transition: 0.8s;
-}
-
+  }
+  
+  .nav-link {
+    color: black !important;
+  }
+  
+  .navbar-brand {
+    color: white !important;
+  }
+  
+  .btn-outline-dark {
+    background-color: white !important;
+    color: #495057 !important;
+    border-color: #ced4da !important;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: white !important;
+  }
+  
+  .navbar-toggler {
+    background-color: white !important;
+  }
+  
 /*HEADER end*/
 /* Parallex Images*/
 
-.pimg1, .pimg2, .pimg3, .pimg4{
+
+.ptext-background{
+    background-image: url('images/noname-and-co.jpg');
+    background-size: cover;
+    filter: blur(7px);
+    min-height: 500px;
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-/*fixed = parallex
-  scroll = normal
-  */
-
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 
-.pimg1{
-    background-image: url('images/img1.jpeg');
-    min-height: 500px;
+.ptext{
+    position: absolute;
+    top:50%;
+    width:100%;
+    padding-left: 5%; 
+    margin: auto;
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'Permanen Marker', cursive;
 }
 
-.pimg2{
-    background-image: url('images/img2.jpeg');
-    min-height: 400px;
+.ptext h4{
+    font-size: 27px;
 }
-
-.pimg3{
-    background-image: url('images/img3.jpg');
-    min-height: 400px;
+.ptext p{
+    font-size: 12px;
 }
-.pimg4{
-    background-image: url('images/img1.jpeg');
-    min-height: 400px;
-    padding-bottom: 50px;
+.ptext hr{
+    background-color: white;
+    position: relative;
+    width: 30%;
 }
 
 /*end of PARALLEX images*/
 
-.section{
+.blight{
     text-align: center;
     padding: 50px;
     margin: auto;
@@ -80,7 +140,7 @@ nav:hover{
 /*BEGINNING OF WHO WE ARE */
 .the-team{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px,auto);
     justify-content: flex-start;
     justify-items: stretch;
@@ -91,24 +151,22 @@ nav:hover{
 .who01{
     grid-column: 1/2;
     grid-row: 1/5;
-    text-align: left;
+    text-align: center;
     padding: 2em;
-    background-color: #f12b37;
-    color: #fff;
+    background-color: rgb(245, 245, 245);
+    color:black;
 }
 
 .who01 h4{
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-}
-.who01 hr{
-    background: #fff;
-    width: 20%;
+    letter-spacing: 5px;
 }
 
 .who02{
-    grid-column: 2/4;
+    grid-column: 1/4;
     grid-row: 1/5;
-    background: #fff;
+    background-color: rgb(245, 245, 245);
 }
 
 /* PHOTOS GRID */
@@ -122,14 +180,18 @@ nav:hover{
 .photo01{
     text-align: center;
     padding: 1.5rem 2rem;
-    box-shadow: var(--shadow);
 }
 
 .photo01 img{
     max-width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: solid 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
+
+.photo01 h6{font-size: 18px;}
+.photo01 h5{font-size: 16px}
 
 /* END OF PHOTOS GRID */
 /*END OF SECTION WHO WE ARE*/
@@ -138,9 +200,8 @@ nav:hover{
 .wewe{
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-auto-rows: minmax(100px,auto);
-    grid-gap: 1em;
     text-align: left;
     justify-content: flex-start;
     justify-items: stretch;
@@ -152,63 +213,29 @@ nav:hover{
 }
 
 .box-box1{
-    grid-column:1/3;
-    margin: 50px 0px 50px 0px; 
-    background-color: #f12b37;
-    grid-row: 1/7;
+    grid-column:1/4;
+    /*background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(images/img4.jpeg);*/
+    background: rgba(122, 26, 34, 0.8);
+    background-size: cover;
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+
+    color: white;
+}
+
+.box-box1 h4{
+    padding-top: 15px;
+    font-family: 'Lobster', cursive;
 }
 
 .box-box2{
-    margin: 0px 0px 0px 100px;
     grid-column: 1/4;
     grid-row:2/6;
-    background: #fff;
-}
-
-.box-box2 h5{
-    font-size: 1.1em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.box-box2 hr{
-    background: #f12b37;
-    height: 1px;
-    width: 20%;
-
+    background: rgb(245, 245, 245);
 }
 
 /* ---------------------- */
 
-.section-dark{
-    background-color: #282e34;
-    color: lightgrey;
-}
-
-.ptext{
-    position: absolute;
-    display: flex;
-    top:50%;
-    width:100%;
-    text-align: center;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.ptext .border{
-    background-color: #282e34;
-    color: white;
-    padding: 20px;
-    max-width: fit-content;
-    margin: auto;
-}
-
-.ptext .border.trans{
-    background-color: transparent;
-    
-}
 
 .block{
     float: left;
@@ -218,44 +245,128 @@ nav:hover{
     box-sizing: border-box;
 }
 
+/* SUPPORT US SECTION */
+.support-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr,1fr;
+    text-align: left;
+    padding: 35px;
+    margin: 0 auto;
+}
+.message h4{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.message p{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+.my-form{
+    margin: 0px 0px;
+    color: white;
+    font-family: 'Anton', cursive; 
+}
+
+.my-form label{
+    display: block;
+
+}
+
+.my-form input[type="text"], textarea{
+    margin: 10px 0px;
+    padding:8px;    
+    width: 100%;
+
+}
+
+.my-form textarea{
+    height: 100px;
+}
+
+.readmore1-btn{
+    width: 110px;
+    align-content: center;
+    
+}
+.readmore1-btn:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition-duration: 0.2s;
+}
+
+.submit-btn{
+    border: 0px solid #fff;
+    border-radius: 3px;
+    background: #9d1e2f;
+    padding: 5px 5px;
+    color: white;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover{
+    color: black;
+    background: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.submit-btn:active {
+    color: #282e34;
+    text-decoration: none;
+
+    color: #203257;
+    font-size: 37px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+/* END OF SUPPORT US SECTION */
+
 /* The beginning of footer */
 
-footer{
-
+footer {
     width: 100%;
-    background: #000;
+    letter-spacing: 4px;
+    font-size: 0.9em;
+    background: white;
     margin: auto;
     padding: 50px 0px;
     text-align: center;
-    color: #ccc;
+    color: black;
+    font-family: "Bangers", cursive;
+  }
+   
+.fa-heart{
+	color:#ff0000;
+	animation:animateHeart 1.5s linear infinite;
 }
-
-/*footer ends*/
-
-
-.footer2 h6{
-    text-transform: uppercase;
-    color: rgb(109, 105, 100);
-}
-
-.footer2 p{
-    line-height: 1.3em;
-    text-align: justify;
-}
-
-.footer2 a{
-    text-decoration: none;
-    color: lightgray;
-}
-
-.footer2 a:hover{
-    text-decoration: none;
-    color: #282828;
-}
-
-.footer2 a:active {
-    color: #282e34;
-    text-decoration: none;
+ @keyframes animateHeart{
+	0%{
+		transform:scale(1);
+		color:#000000;
+	}
+	20%{
+		color:#ee0000;
+	}
+	50%{
+		transform:scale(1.2);
+		color:#ff0000;
+	}
+	80%{
+		color:#ee0000;
+	}
+ 	100%{
+		transform:scale(1);
+		color:#000000;
+	}
 }
 
 /*footer ends*/
@@ -285,6 +396,10 @@ footer{
 
 /* Media Queries */
 @media(max-width:1000px){
+    .the-team{
+        margin-top: -250px;
+    }
+
     .who01{
         grid-column: 1/4;
         grid-row: 1/4;
@@ -296,39 +411,171 @@ footer{
     }
  
     }
-@media(max-width:700px){
+@media(max-width:767px){
+    .photo01 img{
+        width: 150px;
+        height: 150px;
+    }
+    .photo01 h6{font-size: 16px}
+    .photo01 h5{font-size: 13px}
+    .who01 h4{
+        font-size: 20px;
+    }
+    .ptext h4{
+        font-size: 24px;
+    }
+    .ptext p{
+        font-size: 12px;
+    }
+    .ptext hr{
+        width: 55%;
+    }
+    .box-box1 h4{
+        font-size: 20px;
+    }
+    .box-box2 p{font-size: 13px}
 
-  }
+    .message h4{
+        font-size: 20px;
+    }
+    .message p{font-size: 17px}
+
+    .my-form label{
+        font-size: 15px;
+    }
+    .my-form ::placeholder{font-size: 13px}
+    .my-form input[type="text"], textarea{
+        margin: 10px 0px;
+        padding:6px;    
+        width: 100%;
+    
+    }
+}
 
 @media(max-width: 575.98px){
     .pimg1, .pimg2, .pimg3{
         background-attachment: fixed;
+    }
+    .ptext h4{
+        font-size: 20px;
+    }
+    .ptext p{
+        font-size: 11px;
+    }
+    .ptext hr{
+        width: 70%;
+    }
+    .photo01 img{
+        width: 125px;
+        height: 125px;
+    }
+    .photo01 h6{
+        font-size: 12px;
+    }
+    .photo01 h5{
+        font-size: 11px;
+    }
+    .who01 h4{
+        font-size: 17px;
+    }
+    .box-box1 h4{
+        font-size: 17px;
+    }
+    .box-box2 p{
+        font-size: 11px;
+    }
+
+    .message h4{
+        font-size: 17px;
+    }
+    .message p{
+        font-size: 14px;
+    }
+
+    .my-form label{
+        font-size: 13px;
+    }
+    .my-form ::placeholder{font-size: 11px}
+    .my-form input[type="text"], textarea{
+        margin: 10px 0px;
+        padding:5px;    
+        width: 100%;
+    
+    }
+
+    .support-us{
+        grid-template-columns: 1fr;
     }
 
 }
 
   
   @media (max-width: 420px) {
-
-    .photo01 img{
-        width: 150px;
-        height: 150px;
+    .blight{
+        padding: 50px 20px;
     }
-}
-@media(max-width: 390px){
-    .photo{    
-        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    .ptext h4{
+        font-size: 18px;
+    }
+    .ptext p{
+        font-size: 9.5px;
+    }
+    .ptext hr{
+        width: 95%;
     }
     .photo01 img{
         width: 120px;
         height: 120px;
+    }
+    .photo01 h6{
+        font-size: 11px;
+    }
+    .photo01 h5{
+        font-size: 10px;
+    }
+    .who01 h4{
+        font-size: 15px;
+    }
+    .box-box1 h4{
+        font-size: 15px;
+    }
+    .box-box2 p{
+        font-size: 10px;
+    }
+
+    .message h4{
+        font-size: 15px;
+    }
+    .message p{
+        font-size: 13px;
+    }
+
+    .my-form label{
+        font-size: 11px;
+    }
+    .my-form input[type="text"], textarea{
+        margin: 10px 0px;
+        padding:3px;    
+        width: 100%;
+    
+    }
+    .my-form ::placeholder{font-size: 9px}
+
+}
+@media(max-width: 390px){
+    .photo{    
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+    .photo01 img{
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }
     
 }
   @media (max-width: 375px) {
 .photo{    
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
 }
 .wewe div{
     padding: 1em;
@@ -338,14 +585,12 @@ footer{
 
 @media(max-width:320px){
     .photo{    
-        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     }
-    .photo01 h5{
-        font-size: 1em;
-    }
+
     .photo01 img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         justify-content: flex-start;
     }    
 }
