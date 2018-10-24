@@ -93,10 +93,10 @@ header {
 .ptext-background{
     background-image: url('images/noname-and-co.jpg');
     background-size: cover;
-    filter: blur(7px);
+    filter: blur(2px);
+    opacity: 0.7;
     min-height: 500px;
     position: relative;
-    opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,6 +119,7 @@ header {
     font-size: 27px;
 }
 .ptext p{
+    opacity: 0.3;
     font-size: 12px;
 }
 .ptext hr{
@@ -139,60 +140,66 @@ header {
 
 /*BEGINNING OF WHO WE ARE */
 .the-team{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100px,auto);
-    justify-content: flex-start;
-    justify-items: stretch;
-    justify-items: stretch;
-    margin-top: 20px;
-}
-
-.who01{
-    grid-column: 1/2;
-    grid-row: 1/5;
-    text-align: center;
-    padding: 2em;
     background-color: rgb(245, 245, 245);
-    color:black;
 }
 
 .who01 h4{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
+    padding: 2em;
+}
+/* The Developers Title */
+.title-dev{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.title-dev h4{font-family: 'Lobster',cursive;
 }
 
-.who02{
-    grid-column: 1/4;
-    grid-row: 1/5;
-    background-color: rgb(245, 245, 245);
+.title-dev hr{
+    background: black;
+    width: 90%;
+    margin: auto;
 }
-
 /* PHOTOS GRID */
 .photo{
     display:grid;
     padding: 2em;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .photo01{
     text-align: center;
     padding: 1.5rem 2rem;
+
 }
 
 .photo01 img{
     max-width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: solid 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
 
 .photo01 h6{font-size: 18px;}
 .photo01 h5{font-size: 16px}
 
+.phnto{
+    display:grid;
+    padding: 2em;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.phxto{
+    display:grid;
+    padding: 2em;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
 /* END OF PHOTOS GRID */
 /*END OF SECTION WHO WE ARE*/
 
@@ -225,7 +232,8 @@ header {
 
 .box-box1 h4{
     padding-top: 15px;
-    font-family: 'Lobster', cursive;
+
+    font-family: Helvetica;
 }
 
 .box-box2{
@@ -257,24 +265,25 @@ header {
 .message h4{
     color: white;
     font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .message p{
     color: white;
-    font-family: 'Amatic SC', cursive;
-    font-size: 20px;
+    font-family: 'Anton', cursive;
+    font-size: 15px;
 }
 
 .my-form{
     margin: 0px 0px;
     color: white;
-    font-family: 'Anton', cursive; 
+    font-family: 'Anton', cursive;
+    padding-top: 40px; 
 }
 
-.my-form label{
+.my-form p{
     display: block;
-
+    font-size: 17px;
 }
 
 .my-form input[type="text"], textarea{
@@ -285,7 +294,7 @@ header {
 }
 
 .my-form textarea{
-    height: 100px;
+    height: 250px;
 }
 
 .readmore1-btn{
@@ -396,21 +405,10 @@ footer {
 
 /* Media Queries */
 @media(max-width:1000px){
-    .the-team{
-        margin-top: -250px;
+    .photo{
+        grid-template-columns: 1fr;
     }
 
-    .who01{
-        grid-column: 1/4;
-        grid-row: 1/4;
-    }
-    .who02{
-        grid-column: 1/4;
-        grid-row: 4/7;
-        justify-content: flex-start;
-    }
- 
-    }
 @media(max-width:767px){
     .photo01 img{
         width: 150px;
@@ -421,6 +419,11 @@ footer {
     .who01 h4{
         font-size: 20px;
     }
+
+    .title-dev h4{
+        font-size: 20px;
+    }
+
     .ptext h4{
         font-size: 24px;
     }
@@ -453,6 +456,9 @@ footer {
 }
 
 @media(max-width: 575.98px){
+    .phnto{
+        grid-template-columns: 1fr;
+    }
     .pimg1, .pimg2, .pimg3{
         background-attachment: fixed;
     }
@@ -478,6 +484,11 @@ footer {
     .who01 h4{
         font-size: 17px;
     }
+
+    .title-dev h4{
+        font-size: 17px;
+    }
+
     .box-box1 h4{
         font-size: 17px;
     }
@@ -492,7 +503,7 @@ footer {
         font-size: 14px;
     }
 
-    .my-form label{
+    .my-form p{
         font-size: 13px;
     }
     .my-form ::placeholder{font-size: 11px}
@@ -534,6 +545,9 @@ footer {
         font-size: 10px;
     }
     .who01 h4{
+        font-size: 15px;
+    }
+    .title-dev h4{
         font-size: 15px;
     }
     .box-box1 h4{
