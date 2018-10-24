@@ -195,7 +195,7 @@ header {
     background-color: #F6F6F6;
 }
 
-.fraction{
+.main-news{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -206,7 +206,7 @@ header {
     height: 416px;
 }
 
-#box1{
+#main1{
     grid-column: 1/3;
     grid-row: 1/3;
     border-radius: 3px;
@@ -246,7 +246,7 @@ header {
     color: indigo;
 }
 
-#box2{
+#main2{
     grid-column: 3/4;
     grid-row: 1/2;
     border-radius: 3px;
@@ -268,7 +268,7 @@ header {
     background: rgb(0, 0, 0); 
     background: rgba(0, 0, 0, 0.5); 
 }
-#box3{
+#main3{
     grid-column: 4/5;
     grid-row: 1/2;
     border-radius: 3px;
@@ -289,7 +289,7 @@ header {
     background: rgb(0, 0, 0); 
     background: rgba(0, 0, 0, 0.5); 
 }
-#box4{
+#main4{
     grid-column: 3/4;
     grid-row: 2/3;
     border-radius: 3px;
@@ -311,7 +311,7 @@ header {
     background: rgb(0, 0, 0); 
     background: rgba(0, 0, 0, 0.5); 
 }
-#box5{
+#main5{
     grid-column: 4/5;
     grid-row: 2/3;
     border-radius: 3px;
@@ -335,12 +335,12 @@ header {
 }
 /* The end of FRACTION*/
 
-/*Section second */
+/*DIV BLOCKS */
 
 .blocks{
     display: grid;
     grid-template-columns: 1fr, 2fr,1fr;
-    grid-gap: 2em;
+    grid-gap: 1em;
     width: 100%;
     height: 500px;
     margin-top: 100px;
@@ -348,40 +348,184 @@ header {
 }
 #block1{
     grid-column: 1;
-    border: solid 2px black;
     display: grid;
-    grid-template-rows: repeat(5,1fr)
+    grid-template-rows: repeat(12,1fr);
 }
-#ba1, #ba2, #ba3, #ba4, #ba5{
+#ba3, #ba4, #ba5, #ba6, #ba7{
     grid-row: span 1;
-    border-top: black solid 1px;
+    border-top: #d8d8d8 solid 1px;
+    text-align: justify;
+}
+#ba1, #bb1{
+    grid-row: span 1;
+    background-color: #F2F2F2;
+    color: #484242;
+    display: table;
+    width: 100%;
+}
+#ba1 a, #bb1 a, #bb3 a, #bb4 a, #ba3 a,
+ #ba4 a, #ba5 a, #ba6 a, #ba7 a, #bc2 a,
+ #bc3 a, #bc4 a, #bc5 a{
+    color: inherit;
+    text-decoration: none;
+}
+.ba1-table, .bb1-table, .bb3-table, .bb4-table{
+    display: table-row;
+    color: #484242;
+}
+.bb3-table :hover, .bb4-table :hover{
+    color: #9d1e2f;
+}
+#ba1 .part1, #bb1 .part1{
+    width: 80%;
+    display: table-cell;
+}
+.bb-part1{
+    width: 40%;
+    display: table-cell;
+}
+.bb-part2{
+    width: 60%;
+    display: table-cell;
+}
+#ba1 h3, #bb1 h3{
+    font-size: 1.5em;
+    padding-block-start: 0.25em;
+    padding-block-end: auto;
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 5px;
+}
+#ba1 .part2, #bb1 .part2{
+    display: table-cell;
+    background-color: #e5e5e5;
+    color: #484242;
+}
+
+#ba1 i, #bb1 i{
+    font-size: 10px;
+    padding-block-start: 0.25em;
+}
+.block-link{
+    color: inherit;
+    text-decoration: none;
+}
+.block-link :hover{
+    color: #9d1e2f;
+}
+
+#ba2{
+    grid-row: span 6;
+    border-top: #d8d8d8 solid 1px;
+    background-image: url('images/who4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+#ba2-text{
+    position: absolute;
+    top: 70%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5); 
 }
 #block2{
     grid-column: 2;
-    border: solid 2px black;
     display: grid;
-    grid-template-rows: repeat(4,1fr)
-}
-#bb1, #bb2, #bb3, #bb4{
-    grid-row: span 1;
-    border-top: black solid 1px;
+    grid-template-rows: repeat(12,1fr);
 }
 
+#bb3, #bb4{
+    grid-row: span 3;
+    border-top: #d8d8d8 solid 1px;
+}
+#bb2{
+    grid-row: span 5;
+    background-image: url('images/who6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+#bb2-text{
+    position: absolute;
+    top: 62%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
 #block3{
     grid-column: 3;
-    border: solid 2px black;
     display: grid;
-    grid-template-rows: repeat(5,1fr)
+    grid-template-rows: repeat(12,1fr)
 }
-#bc1, #bc2, #bc3, #bc4, #bc5{
+#bc1{
+    grid-row: span 8;
+    background-image: url('images/who5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+#bc1-text{
+    position: absolute;
+    top: 75%;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5); 
+}
+#bc2, #bc3, #bc4, #bc5{
     grid-row: span 1;
-    border-top: black solid 1px;
+    border-top: #d8d8d8 solid 1px;
+    text-align: justify;
 }
 
 
-/*Section Second Ends*/
+/* DIV SQUARE */
 
-/* The beginning of footer */
+.container-third{
+    width: 100%;
+    height: auto;
+    background-color: #202020;
+    color: white;
+    text-align: justify;
+}
+.square{
+    display: grid;
+    grid-template-columns: 5fr, 2fr;
+    grid-template-rows: 1fr,1fr,1fr;
+    grid-gap: 1em;
+    margin: 50px auto 0px auto;
+}
+#square1{
+    grid-row: span 1;
+    text-align: center;
+    color: white;
+
+}
+#square2{
+    grid-column: 5;
+    grid-row: span 2;
+}
+#square3{
+    grid-column: 2;
+    grid-row: span 1;
+}
+#square4{
+    grid-column: 2;
+    grid-row: span 1;
+}
+
+
+/* FOOTER */
 
 footer {
     width: 100%;
