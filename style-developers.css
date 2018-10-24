@@ -7,6 +7,7 @@ body, html{
     line-height: 1.8em;
     color: white;
     background-image: url('images/black2.jpg');
+
 } 
 
 /* FONTS */
@@ -41,60 +42,14 @@ body, html{
     src: url('fonts/brooklyn.otf');
 }
 
-/* Global */
-.container{
-    width: 80%;
-    margin:auto;
-    overflow: hidden;
-}
 
-/*Header*/
-header {
-    margin: 0;
-  }
-  
-  nav {
-    transition: 0.8s;
-    color: white;
-  }
-  
-  nav:hover {
-    background-color: white;
-    color: aliceblue;
-    transition: 0.8s;
-  }
-  
-  .nav-link {
-    color: black !important;
-  }
-  
-  .navbar-brand {
-    color: white !important;
-  }
-  
-  .btn-outline-dark {
-    background-color: white !important;
-    color: #495057 !important;
-    border-color: #ced4da !important;
-  }
-  
-  .navbar-light .navbar-toggler-icon {
-    background-color: white !important;
-  }
-  
-  .navbar-toggler {
-    background-color: white !important;
-  }
-  
-/*HEADER end*/
-/* Parallex Images*/
+/*HEADER BACKGROUND*/
 
 
-.ptext-background{
-    background-image: url('images/noname-and-co.jpg');
+.hdev-background01{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/noname-and-co.jpg');
     background-size: cover;
     filter: blur(2px);
-    opacity: 0.7;
     min-height: 500px;
     position: relative;
     background-position: center;
@@ -103,7 +58,7 @@ header {
     background-attachment: fixed; 
 }
 
-.ptext{
+.hdev-letter{
     position: absolute;
     top:50%;
     width:100%;
@@ -115,28 +70,26 @@ header {
     font-family: 'Permanen Marker', cursive;
 }
 
-.ptext h4{
+.hdev-letter h4{
     font-size: 27px;
 }
-.ptext p{
+.hdev-letter p{
     opacity: 0.3;
     font-size: 12px;
 }
-.ptext hr{
+.hdev-letter hr{
     background-color: white;
     position: relative;
     width: 30%;
 }
 
-/*end of PARALLEX images*/
+/*end of HEADER BACKGROUND*/
 
-.blight{
+.dev-config{
     text-align: center;
     padding: 50px;
     margin: auto;
 }
-
-/*row vertical, column horizontal effect*/
 
 /*BEGINNING OF WHO WE ARE */
 .the-team{
@@ -149,7 +102,7 @@ header {
     letter-spacing: 5px;
     padding: 2em;
 }
-/* The Developers Title */
+/*THE DEVELOPERS DIVISION*/
 .title-dev{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -203,8 +156,8 @@ header {
 /* END OF PHOTOS GRID */
 /*END OF SECTION WHO WE ARE*/
 
-/*Beginning of section 2 HOW WE WORK*/
-.wewe{
+/*Beginning of section 2 WHAT WE HAVE DONE*/
+.dev-info{
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -215,14 +168,13 @@ header {
     align-items: stretch;
 
 }
-.wewe div{
+.dev-info div{
     padding: 2em;
 }
 
 .box-box1{
     grid-column:1/4;
-    /*background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(images/img4.jpeg);*/
-    background: rgba(122, 26, 34, 0.8);
+    background: rgb(122, 26, 34);
     background-size: cover;
     text-transform: uppercase;
     letter-spacing: 5px; 
@@ -240,17 +192,6 @@ header {
     grid-column: 1/4;
     grid-row:2/6;
     background: rgb(245, 245, 245);
-}
-
-/* ---------------------- */
-
-
-.block{
-    float: left;
-    width:33.3%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-sizing: border-box;
 }
 
 /* SUPPORT US SECTION */
@@ -297,18 +238,6 @@ header {
     height: 250px;
 }
 
-.readmore1-btn{
-    width: 110px;
-    align-content: center;
-    
-}
-.readmore1-btn:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition-duration: 0.2s;
-}
-
 .submit-btn{
     border: 0px solid #fff;
     border-radius: 3px;
@@ -339,70 +268,6 @@ header {
 
 /* END OF SUPPORT US SECTION */
 
-/* The beginning of footer */
-
-footer {
-    width: 100%;
-    letter-spacing: 4px;
-    font-size: 0.9em;
-    background: white;
-    margin: auto;
-    padding: 50px 0px;
-    text-align: center;
-    color: black;
-    font-family: "Bangers", cursive;
-  }
-   
-.fa-heart{
-	color:#ff0000;
-	animation:animateHeart 1.5s linear infinite;
-}
- @keyframes animateHeart{
-	0%{
-		transform:scale(1);
-		color:#000000;
-	}
-	20%{
-		color:#ee0000;
-	}
-	50%{
-		transform:scale(1.2);
-		color:#ff0000;
-	}
-	80%{
-		color:#ee0000;
-	}
- 	100%{
-		transform:scale(1);
-		color:#000000;
-	}
-}
-
-/*footer ends*/
-/*FEW ADDITIONALS*/
-
-.square,{
-    margin:300px;
-}
-
-.addition{
-    margin: 150px;
-    height: auto;
-    max-width: 100%;
-}
-.addition h2{
-    color: #f12b37;
-}
-.cover{
-    background-color: blue;
-    opacity: 0.70;
-    margin:auto;
-    max-width: fit-content;
-}
-.cover h5{
-    color: aliceblue;
-}
-
 /* Media Queries */
 @media(max-width:1000px){
     .photo{
@@ -424,13 +289,13 @@ footer {
         font-size: 20px;
     }
 
-    .ptext h4{
+    .hdev-letter h4{
         font-size: 24px;
     }
-    .ptext p{
+    .hdev-letter p{
         font-size: 12px;
     }
-    .ptext hr{
+    .hdev-letter hr{
         width: 55%;
     }
     .box-box1 h4{
@@ -459,16 +324,16 @@ footer {
     .phnto{
         grid-template-columns: 1fr;
     }
-    .pimg1, .pimg2, .pimg3{
+    .hdev-background{
         background-attachment: fixed;
     }
-    .ptext h4{
+    .hdev-letter h4{
         font-size: 20px;
     }
-    .ptext p{
+    .hdev-letter p{
         font-size: 11px;
     }
-    .ptext hr{
+    .hdev-letter hr{
         width: 70%;
     }
     .photo01 img{
@@ -522,16 +387,16 @@ footer {
 
   
   @media (max-width: 420px) {
-    .blight{
+    .dev-config{
         padding: 50px 20px;
     }
-    .ptext h4{
+    .hdev-letter h4{
         font-size: 18px;
     }
-    .ptext p{
+    .hdev-letter p{
         font-size: 9.5px;
     }
-    .ptext hr{
+    .hdev-letter hr{
         width: 95%;
     }
     .photo01 img{
@@ -591,7 +456,7 @@ footer {
 .photo{    
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
 }
-.wewe div{
+.dev-info div{
     padding: 1em;
 }
 
