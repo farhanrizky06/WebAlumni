@@ -9,18 +9,18 @@
 
 
 /*The end of the page settings*/
-
-/*The beginning of FRACTION*/
-#headline{
-    text-align: center;
-    color: firebrick;
-    font-size: 30px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
+.date{
+    justify-content: end;
+    margin-top: 20px;
 }
 .date h5{
     text-align: center;
-    color: black;
+    color:#202020;
+}
+#headline-hr{
+    background-color: #9d1e2f;
+    height: 5px;
+    width: 70%;
 }
 
 .container-first{
@@ -34,7 +34,8 @@
     grid-gap: 1em;
     border: white;
     border-radius: 3px;
-    width: 70%;
+    min-width: 70%;
+    width: 1300px;
     height: 416px;
     margin: 0 auto;
 }
@@ -174,12 +175,14 @@
 }
 .blocks{
     display: grid;
-    grid-template-columns: 1fr, 2fr,1fr;
+    grid-template-columns: 1fr, 1fr,1fr;
     grid-gap: 1em;
-    width: 70%;
+    min-width: 70%;
+    width: 1300px;
     height: 500px;
     margin: 0px auto 0 auto;
     grid-template-rows: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #block1{
     grid-column: 1;
@@ -268,7 +271,7 @@
     background: rgba(255, 255, 255, 0.5); 
 }
 #block2{
-    grid-column: 2;
+    grid-column: 3;
     display: grid;
     grid-template-rows: repeat(12,1fr);
 }
@@ -295,9 +298,9 @@
     background: rgba(0, 0, 0, 0.5); 
 }
 #block3{
-    grid-column: 3;
+    grid-column: 2;
     display: grid;
-    grid-template-rows: repeat(12,1fr)
+    grid-template-rows: repeat(12,1fr);
 }
 #bc1{
     grid-row: span 8;
@@ -339,7 +342,8 @@
     grid-template-rows: repeat(7,1fr);
     grid-gap: 1em;
     margin: 0 auto;
-    width: 70%;
+    min-width: 70%;
+    width: 1300px;
     padding: 50px 0px;
     height: 700px;
 }
@@ -408,164 +412,337 @@
 }
 
 /* Media Queries */
-@media(max-width:1000px){
+@media(max-width:1380px){
+
+    .main-news{
+        width: 100%;
+        height: 416px;
+
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: 1fr, 1fr,1fr;
+        grid-gap: 1em;
+        width: 100%;
+        height: auto;
+        margin: 0px auto 0 auto;
+        grid-template-rows: 1fr;
+    }
+    .square{
+        max-width: 1300px;
+        width: 100%;
+        min-height: 700px;
+        height: auto;
+    }
+    #headline-hr{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:768px){
+    .blocks{
+        grid-template-columns: 1fr, 1fr;
+        width: 100%;
+        height: auto;
+        grid-template-rows: 1fr, 1fr, 1fr;
+    }
+    #block1{
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-row: span 1;
+    }
+   
+    #block2{
+        grid-column: span 2;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-row: span 2;
+    }
     
-    .fraction{
+    #block3{
+        grid-column: 2;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-row: span 1;
+    }
+}
+
+
+
+@media(max-width:1000px){
+    .main-news{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 1em;
-        border: groove white;
-        border-radius: 3px;
         width: 100%;
-        height: auto;
-    }
-    #box1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-        border-radius: 3px;
-        background-image: url('images/calvin.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-align: justify;
-    }
-    #box2{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        border-radius: 3px;
-        background-image: url('images/party.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        width: 100%;
-        height: auto;
-        max-height: 300px;
-    }
-    #box3{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        border-radius: 3px;
-        background-image: url('images/sprawled.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        max-height: 300px;
-    }
-    #box4{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        border-radius: 3px;
-        background-image: url('images/18.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        max-height: 300px;
-    }
-    #box5{
-        grid-column: 2/3;
-        grid-row: 4/5;
-        border-radius: 3px;
-        background-image: url('images/ssss.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        max-height: 300px;
-    }
-
-
-	
-
-}
-@media(max-width:700px){
- 
-    .main-news{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-gap: 1em;
-        border: groove white;
-        border-radius: 3px;
-        width: 100%;
-        height: auto;
+        height: 1000px;
     }
     #main1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        border-radius: 3px;
-        background-image: url('images/calvin.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-align: justify;
+        grid-column: 1/3;
+        grid-row: span 2;
     }
     #main2{
         grid-column: 1/2;
-        grid-row: 2/3;
-        border-radius: 3px;
-        background-image: url('images/party.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        
+        grid-row: span 1;
     }
     #main3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        border-radius: 3px;
-        background-image: url('images/sprawled.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-       
+        grid-column: 2/3;
+        grid-row: span 1;
     }
     #main4{
         grid-column: 1/2;
-        grid-row: 4/5;
-        border-radius: 3px;
-        background-image: url('images/18.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        
+        grid-row: span 1;
     }
     #main5{
-        grid-column: 1/2;
-        grid-row: 5/6;
-        border-radius: 3px;
-        background-image: url('images/ssss.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        color: white;
-        text-align: justify;
-        background-size: cover;
-        
+        grid-column: 2/3;
+        grid-row: span 1;
     }
 
+    .square{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(11,1fr);
+        width: 100%;
+        height: auto;
+        max-height: 1100px;
+    }
+    #square1{
+        grid-column: 1/3;
+        grid-row: span 1;
+    }
+    #square2{
+        grid-column: 1/3;
+        grid-row: span 6;
+    }
+    #square3{
+        grid-column: 1/2;
+        grid-row: span 4;
+    }
+    #square4{
+        grid-column: 2/3;
+        grid-row: span 4;
+    }
+    
 }
 
-@media(max-width: 575.98px){
-    .pimg1, .pimg2, .pimg3{
-        background-attachment: fixed;
-    }    
-    .section{
+@media(max-width: 400px){
+    /* Global */
+    .container-first , .container-second{
+    padding: 20px 20px; 
+    }
+
+    /*MAIN*/
+
+    .main-news{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        width: 100%;
+        height: 500px;
+    }
+
+    #main1{
+        grid-row: span 6;
+        grid-column: span 1;
+    }
+    #main1 h3{
+        font-size: 20px;
+        text-align: justify;
+    }
+    #main1 p{
+        font-size: 10px;
+    }
+    #gridtext1{
+        position: absolute;
+        top: 60%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(0, 0, 0); 
+        background: rgba(0, 0, 0, 0.5); 
+    }
+    
+    #main2{
+        grid-row: span 1;
+        grid-column: span 1;
+        background-size: 0px;
+        color: black;
+        background-color: #f6f6f6;
+        border-bottom: #d2d2d2 solid 1px;
+    }
+    #gridtext2{
+        position: relative;
+        top: 0;
+        background: transparent;
+        font-size: 10px;
+    }
+    #main2 h5{
+        font-size: 13px;
+    }
+    #main3{
+        grid-row: span 1;
+        grid-column: span 1;
+        background-size: 0px;
+        color: black;
+        background-color: #f6f6f6;
+        border-bottom: #d2d2d2 solid 1px;
+    }
+    #gridtext3{
+        position: relative;
+        top: 0;
+        background: transparent;
+        font-size: 10px;
+    }
+    #main3 h5{
+        font-size: 13px;
+    }
+    #main4{
+        grid-row: span 1;
+        grid-column: span 1;
+        background-size: 0px;
+        color: black;
+        background-color: #f6f6f6;
+        border-bottom: #d2d2d2 solid 1px;
+    }
+    #gridtext4{
+        position: relative;
+        top: 0;
+        background: transparent;
+        font-size: 10px;
+    }
+    #main4 h5{
+        font-size: 13px;
+    }
+    #main5{
+        grid-row: span 1;
+        grid-column: span 1;
+        background-size: 0px;
+        color: black;
+        background-color: #f6f6f6;
+        border-bottom: #d2d2d2 solid 1px;
+    }
+    #gridtext5{
+        position: relative;
+        top: 0;
+        background: transparent;
+        font-size: 10px;
+    }
+    #main5 h5{
+        font-size: 13px;
+    }
+
+    /*BLOCKS*/
+
+    .blocks{
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-height: 1350px;
+        grid-template-rows: repeat(3,1fr);
+    }
+    #block1{
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-row: span 1;
+        max-height: 450px;
+    }
+    #ba2 h3{
+        font-size: 20px;
+    }
+    #ba2-text{
+        position: absolute;
+        top: 72%;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5); 
+    }
+
+    #block2{
+        grid-column: span 1;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-row: span 1;
+        max-height: 450px;
+    }
+    #bb2 h3{
+        font-size: 20px;
+    }
+    #bb2-text{
+        position: absolute;
+        top: 80%;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5); 
+    }
+    
+    #block3{
+        grid-column: 1;
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+        grid-row: span 1;
+        max-height: 450px;
+    }
+    #bc1 h2{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #bc1-text{
+        position: absolute;
+        top: 75%;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5); 
+    }
+
+    /*SQUARE*/
+
+    .square{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10,1fr);
+        width: 100%;
+        padding: 20px 0px;
+        height: auto;
+    }
+    #square1{
+        grid-column: span 1;
+        grid-row: span 1;
         text-align: center;
-        padding: 20px 20px; 
+        color: white;
+        height: auto;
+        width: 100%;
+    }
+    #inline-hr{
+        background-color: #9d1e2f;
+        height: 5px;
+    }
+    #square2{
+        grid-column: span 1;
+        grid-row: span 3;
+        background-image: url('images/logo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        text-align: center;
+    }
+    #sq2-text{
+        position: absolute;
+        top: 75%;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5); 
+    }
+    #square3{
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+    #square4{
+        grid-column: span 1;
+        grid-row: span 3;
     }
 }
