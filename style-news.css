@@ -561,7 +561,7 @@
 
 /*HANDPHONES = SAMSUNG, IPHONES MAJORLY = FIX*/
 
-@media(max-width: 400px){
+@media(max-width: 414px){
     /* Global */
     .container-first , .container-second{
     padding: 20px 20px; 
