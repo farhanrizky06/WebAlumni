@@ -20,7 +20,7 @@
 #headline-hr{
     background-color: #9d1e2f;
     height: 5px;
-    width: 70%;
+    width: 80%;
 }
 
 .container-first{
@@ -379,6 +379,8 @@
     background-repeat: no-repeat;
     position: relative;
     text-align: center;
+    text-decoration: none;
+    color: inherit;
 }
 #sq2-text{
     position: absolute;

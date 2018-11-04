@@ -1,0 +1,268 @@
+/* Global */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 2px #888;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#story-hr{
+    background-color: #9d1e2f;
+    font-size: 3px;
+    width: 100%;
+    margin-top: 125px;
+}
+
+#main-paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #262626;
+}
+.first-paragraph p::first-letter {
+        font-size: 200%;
+        color: Black;
+        font-weight: bold;
+}
+
+#side-paragraph{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/*The end of the page settings*/
+
+/*HEADLINE SETTINGS*/
+
+.headline, .sub-headline{
+    width: 1300px;
+    min-width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.headline h1{
+    font-size: 50px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.sub-headline p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #747474;
+    text-align: justify;
+    margin-bottom: -5px;
+}
+
+/*MAIN FIRST CONTAINER */
+
+.photozone{
+    background-image: url('images/img1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.mainline{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 4em;
+}
+
+/*LEFT PART - FIRST CONTAINER*/
+.wordzone{
+    text-align: justify;
+    margin: 10px 0px 0px 20px;
+    grid-column: 1/4;
+    border-right: 1px solid #e5e5e5;
+    padding-right: 65px;
+}
+
+.wordzone-img{
+    margin: 10px auto;
+    width: 100%;
+}
+#wordzone-img img{
+    max-width: 100%;
+    height: auto;
+}
+#img1-desc{
+    font-size: 13px;
+    color: #747474;
+    text-align: justify;
+}
+
+/*RIGHT PART - FIRST CONTAINER*/
+.partzone{
+    grid-column: 4/5;
+    /*position: fixed;*/
+}
+
+.author-profile{
+    background-image: url('images/rose.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: skyblue;
+}
+#click-text{
+    font-family: 'blacksword';
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 75%;
+    bottom:0;
+    left: 0;
+    right: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+/*REFZONE - AN EXTENDED ONE OF THE LEFT PART FROM CONTAINER 1*/
+
+.refline{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height: auto;
+    min-height: 480px;
+    grid-gap: 1em;
+    margin-top: 25px;
+}
+.ref1, .ref2, .ref3, .ref4, .ref5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: 0.8s;
+    font-family: 'apompadour';
+}
+.ref1 :hover, .ref2 :hover, .ref3 :hover, .ref4 :hover, .ref5 :hover{
+    color: #9d1e2f;
+    transition: 0.8s;
+    
+}
+.ref1{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-image: url('images/jennie.jpg');
+    font-size: 20px;
+}
+.ref2{
+    grid-column: 1/4;
+    grid-row: 4/7;
+    background-image: url('images/lisa.jpg');
+    font-size: 20px;
+}
+#ref-text-left{
+    position: absolute;
+    top: 75%;
+    bottom:0;
+    left: 0;
+    right: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+}
+.ref3{
+    grid-column: 4/6;
+    grid-row: 1/3;
+    background-image: url('images/jisoo.jpg');
+    font-size: 15px;
+}
+.ref4{
+    grid-column: 4/6;
+    grid-row: 3/5;
+    background-image: url('images/jenniesolo.jpg');
+    font-size: 15px;
+}
+.ref5{
+    grid-column: 4/6;
+    grid-row: 5/7;
+    background-image: url('images/blackpink.jpg');
+    font-size: 15px;
+}
+#ref-text-right{
+    position: absolute;
+    top: 75%;
+    bottom:0;
+    left: 0;
+    right: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+/* Media Queries */
+
+/*GLOBAL MEDIA QUERY BEFORE 1024*/
+
+@media(max-width:1380px){
+
+}
+
+
+/*IPAD PRO FIX*/
+@media(max-width:1024px){
+    
+}
+
+/*IPAD FIX*/
+
+@media(max-width:768px){
+ 
+}
+
+/*HANDPHONES = SAMSUNG, IPHONES MAJORLY = FIX*/
+
+@media(max-width: 414px){
+    
+}
