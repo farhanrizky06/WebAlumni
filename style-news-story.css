@@ -1,5 +1,131 @@
 /* Global */
 
+#story-hr{
+    background-color: #9d1e2f;
+    font-size: 3px;
+    width: 100%;
+    margin-top: 125px;
+}
+
+#main-paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #262626;
+}
+.first-paragraph p::first-letter {
+        font-size: 200%;
+        color: Black;
+        font-weight: bold;
+}
+
+#side-paragraph{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/*The end of the page settings*/
+
+/*HEADLINE SETTINGS*/
+
+.headline, .sub-headline{
+    width: 1300px;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.headline h1{
+    font-size: 50px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.sub-headline p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #747474;
+    text-align: justify;
+    margin-bottom: -5px;
+}
+
+/*MAIN FIRST CONTAINER */
+
+.photozone{
+    background-image: url('images/img1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 1300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.mainline{
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 4em;
+}
+
+/*LEFT PART - FIRST CONTAINER*/
+.wordzone{
+    text-align: justify;
+    margin: 10px 0px 0px 20px;
+    grid-column: 1/4;
+    border-right: 1px solid #e5e5e5;
+    padding-right: 65px;
+}
+
+.wordzone-img{
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+#wordzone-img1{
+    width: 100%;
+    height: auto;
+}
+#img1-desc{
+    font-size: 13px;
+    color: #747474;
+    text-align: justify;
+}
+
+/*RIGHT PART - FIRST CONTAINER*/
+.partzone{
+    grid-column: 4/5;
+    /*position: fixed;*/
+}
+
+.author-profile{
+    background-image: url('images/rose.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: skyblue;
+}
+#click-text{
+    font-family: 'blacksword';
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 75%;
+    bottom:0;
+    left: 0;
+    right: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+}
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -40,130 +166,6 @@
 .fa-instagram {
   background: #125688;
   color: white;
-}
-
-#story-hr{
-    background-color: #9d1e2f;
-    font-size: 3px;
-    width: 100%;
-    margin-top: 125px;
-}
-
-#main-paragraph{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #262626;
-}
-.first-paragraph p::first-letter {
-        font-size: 200%;
-        color: Black;
-        font-weight: bold;
-}
-
-#side-paragraph{
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-/*The end of the page settings*/
-
-/*HEADLINE SETTINGS*/
-
-.headline, .sub-headline{
-    width: 1300px;
-    min-width: 70%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.headline h1{
-    font-size: 50px;
-    text-align: justify;
-    font-weight: bold;
-}
-
-.sub-headline p{
-    font-size: 16px;
-    font-weight: bold;
-    color: #747474;
-    text-align: justify;
-    margin-bottom: -5px;
-}
-
-/*MAIN FIRST CONTAINER */
-
-.photozone{
-    background-image: url('images/img1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 75%;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.mainline{
-    width: 75%;
-    height: auto;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr, 1fr;
-    grid-gap: 4em;
-}
-
-/*LEFT PART - FIRST CONTAINER*/
-.wordzone{
-    text-align: justify;
-    margin: 10px 0px 0px 20px;
-    grid-column: 1/4;
-    border-right: 1px solid #e5e5e5;
-    padding-right: 65px;
-}
-
-.wordzone-img{
-    margin: 10px auto;
-    width: 100%;
-}
-#wordzone-img img{
-    max-width: 100%;
-    height: auto;
-}
-#img1-desc{
-    font-size: 13px;
-    color: #747474;
-    text-align: justify;
-}
-
-/*RIGHT PART - FIRST CONTAINER*/
-.partzone{
-    grid-column: 4/5;
-    /*position: fixed;*/
-}
-
-.author-profile{
-    background-image: url('images/rose.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-    position: relative;
-    text-decoration: none;
-    color: skyblue;
-}
-#click-text{
-    font-family: 'blacksword';
-    font-size: 20px;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 75%;
-    bottom:0;
-    left: 0;
-    right: 0; 
-    background: rgb(0, 0, 0); 
-    background: rgba(0, 0, 0, 0.5); 
 }
 
 /*REFZONE - AN EXTENDED ONE OF THE LEFT PART FROM CONTAINER 1*/
@@ -252,17 +254,119 @@
 
 /*IPAD PRO FIX*/
 @media(max-width:1024px){
-    
+    #ref-text-left{
+        top: 65%;
+    }
+    #ref-text-right{
+        top: 60%;
+    }
 }
 
 /*IPAD FIX*/
 
 @media(max-width:768px){
- 
+
+    .headline, .sub-headline{
+        max-width: 100%;
+    }
+
+    .mainline{
+        grid-gap: 2em;
+    }
+
+    .wordzone{
+        padding-right: 25px;
+    }
+
+    #click-text{
+        top: 63%;
+    }
+
+   .ref3, .ref4, .ref5{
+       font-size: 14px;
+   }
 }
 
 /*HANDPHONES = SAMSUNG, IPHONES MAJORLY = FIX*/
 
 @media(max-width: 414px){
+    .container-first{
+        padding: 20px;
+    }
+    .headline{
+        margin-top: 30px;
+    }
+    .headline h1{
+        font-size: 40px;
+    }
+    
+    .sub-headline p{
+        font-size: 13px;
+    }
+
+    .mainline{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+        grid-gap: 2.5em;
+    }
+    
+    /*LEFT PART - FIRST CONTAINER*/
+    .wordzone{
+        grid-row: 1;
+        grid-column: span 1;
+        border-right: none;
+        padding-right: none;
+    }
+    .wordzone p{
+        font-size: 15px;
+    }
+    
+    /*RIGHT PART - FIRST CONTAINER*/
+    .partzone{
+        grid-row: 2;  
+        grid-column: span 1;
+      /*position: fixed;*/
+    }
+    
+    .refline{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        height: auto;
+        min-height: 720px;
+        grid-gap: 1em;
+        margin-top: 25px;
+    }
+    .ref1{
+        grid-column: span 1;
+        grid-row: 1;
+        font-size: 15px;
+    }
+    .ref2{
+        grid-column: span 1;
+        grid-row: 2;
+        font-size: 15px;
+    }
+    #ref-text-left{
+        top: 55%;
+    }
+    .ref3{
+        grid-column: span 1;
+        grid-row: 3;
+        font-size: 15px;
+    }
+    .ref4{
+        grid-column: span 1;
+        grid-row: 4;
+        font-size: 15px;
+    }
+    .ref5{
+        grid-column: span 1;
+        grid-row: 5;
+        font-size: 15px;
+    }
+    #ref-text-right{
+        top: 55%;
+    }
     
 }
