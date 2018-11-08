@@ -326,12 +326,26 @@ body, html{
 /* END OF SUPPORT US SECTION */
 
 /* Media Queries */
-@media(max-width:1000px){
+@media(max-width:1024px){
+    .hdev-letter{
+        top:25%;
+        width: 100%;
+    }
+}
+@media(max-width:768px){
     .photo{
         grid-template-columns: 1fr;
     }
-
+    .hdev-letter{
+    top:35%;
+    width:100%;
+    }
 @media(max-width:767px){
+    .hdev-letter{
+        top:50%;
+        width:100%;
+        }
+    
     .photo01Dev{
         width: 150px;
         height: 150px;
