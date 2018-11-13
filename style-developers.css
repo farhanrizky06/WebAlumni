@@ -242,13 +242,14 @@ body, html{
 .box-box1 h4{
     padding-top: 15px;
 
-    font-family: Helvetica;
+    font-family: 'Acme', sans-serif;
 }
 
 .box-box2{
     grid-column: 1/4;
     grid-row:2/6;
     background: rgb(245, 245, 245);
+    font-family: 'Acme', sans-serif;
 }
 
 /* SUPPORT US SECTION */
@@ -332,10 +333,9 @@ body, html{
         width: 100%;
     }
 }
+
+@media(max-width:950px){.photo{grid-template-columns: 1fr;}}
 @media(max-width:768px){
-    .photo{
-        grid-template-columns: 1fr;
-    }
     .hdev-letter{
     top:35%;
     width:100%;
@@ -393,7 +393,7 @@ body, html{
     .box-box1 h4{
         font-size: 20px;
     }
-    .box-box2 p{font-size: 13px}
+    .box-box2 p{font-size: 17px}
 
     .message h4{
         font-size: 20px;
@@ -470,7 +470,7 @@ body, html{
         font-size: 17px;
     }
     .box-box2 p{
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .message h4{
@@ -551,7 +551,7 @@ body, html{
         font-size: 15px;
     }
     .box-box2 p{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .message h4{
@@ -577,37 +577,6 @@ body, html{
     .photo{    
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     }
-    .photo01Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo02Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo03Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo04Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo05Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo06Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    
 }
   @media (max-width: 375px) {
 .photo{    
@@ -625,33 +594,33 @@ body, html{
     }
 
     .photo01Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo02Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo03Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo04Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo05Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo06Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
 }
