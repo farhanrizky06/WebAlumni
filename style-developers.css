@@ -577,37 +577,6 @@ body, html{
     .photo{    
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     }
-    .photo01Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo02Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo03Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo04Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo05Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    .photo06Dev{
-        width: 100px;
-        height: 100px;
-        justify-content: flex-start;
-    }
-    
 }
   @media (max-width: 375px) {
 .photo{    
@@ -625,33 +594,33 @@ body, html{
     }
 
     .photo01Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo02Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo03Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo04Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo05Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
     .photo06Dev{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         justify-content: flex-start;
     }    
 }
