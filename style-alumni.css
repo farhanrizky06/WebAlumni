@@ -1,0 +1,99 @@
+body,
+html {
+  height: 100%;
+  background-color: #ffd746 !important;
+  font-family: "Oswald", sans-serif !important;
+}
+
+/* opening */
+
+.openingPict1 {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07bcd69444b1da123c309e5f4485371b&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
+  background-size: cover;
+}
+.openingPict2 {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07bcd69444b1da123c309e5f4485371b&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
+  background-size: cover;
+}
+.openingPict3 {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07bcd69444b1da123c309e5f4485371b&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
+  background-size: cover;
+}
+.openingCapt {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* opening */
+
+#main-footer {
+  margin-top: 150px;
+}
+footer {
+  width: 100%;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+  background: white;
+  margin: auto;
+  padding: 50px 0px;
+  text-align: center;
+  color: black;
+  font-family: "Bangers", cursive;
+}
+.footer2 h6 {
+  text-transform: uppercase;
+  color: rgb(109, 105, 100);
+}
+.footer2 p {
+  line-height: 1.3em;
+  text-align: justify;
+}
+.footer2 a {
+  text-decoration: none;
+  color: lightgray;
+}
+.footer2 a:hover {
+  text-decoration: none;
+  color: #282828;
+}
+.footer2 a:active {
+  color: #282e34;
+  text-decoration: none;
+}
+/* footer */
+.fa-heart {
+  color: #ff0000;
+  animation: animateHeart 1.5s linear infinite;
+}
+@keyframes animateHeart {
+  0% {
+    transform: scale(1);
+    color: #000000;
+  }
+  20% {
+    color: #ee0000;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ff0000;
+  }
+  80% {
+    color: #ee0000;
+  }
+  100% {
+    transform: scale(1);
+    color: #000000;
+  }
+}
+/* footer ends */

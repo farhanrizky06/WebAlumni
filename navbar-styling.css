@@ -1,0 +1,34 @@
+nav {
+  transition: 0.8s;
+  color: white;
+}
+
+nav:hover {
+  background-color: white;
+  color: aliceblue;
+  transition: 0.8s;
+}
+
+.nav-link {
+  transition: 1s;
+  color: white !important;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.btn-outline-dark {
+  background-color: white !important;
+  color: #495057 !important;
+  border-color: #ced4da !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: white !important;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}

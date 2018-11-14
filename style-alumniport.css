@@ -5,42 +5,6 @@ html {
   font-family: "Oswald", sans-serif !important;
 }
 
-/* navbar */
-nav {
-  transition: 0.8s;
-  color: white;
-}
-
-nav:hover {
-  background-color: white;
-  color: aliceblue;
-  transition: 0.8s;
-}
-
-.nav-link {
-  color: black !important;
-}
-
-.navbar-brand {
-  color: white !important;
-}
-
-.btn-outline-dark {
-  background-color: white !important;
-  color: #495057 !important;
-  border-color: #ced4da !important;
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-color: white !important;
-}
-
-.navbar-toggler {
-  background-color: white !important;
-}
-
-/* navbar end */
-
 /* opening */
 
 .opening {
@@ -82,11 +46,6 @@ nav:hover {
   height: 5px;
   background-color: rgba(0, 0, 0, 1);
   margin: 0 auto;
-}
-
-.nav-link {
-  transition: 1s;
-  color: white !important;
 }
 
 /* alumnilist */

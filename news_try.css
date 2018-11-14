@@ -18,12 +18,8 @@ html {
   background-image: url(https://images.unsplash.com/photo-1504857561629-9c9b39e991bb?ixlib=rb-0.3.5&s=803d7a690ab8571dd4cb71fbdcdf7575&auto=format&fit=crop&w=1952&q=80);
 }
 
-.navbar {
-  background: #fff;
-}
-
 .dateContainer {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
 }
 
