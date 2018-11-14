@@ -6,7 +6,7 @@ body, html{
     font-weight: 400;
     line-height: 1.8em;
     color: white;
-    background-image: url('images/black2.jpg');
+    background-image: url('https://images.unsplash.com/photo-1434609300835-27998bcd175d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=031ab1d8ab5844563abf7bab66515859&auto=format&fit=crop&w=1934&q=80');
 
 } 
 
@@ -42,16 +42,13 @@ body, html{
     src: url('fonts/brooklyn.otf');
 }
 
-
 /*HEADER BACKGROUND*/
 
-
-.hdev-background01{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/noname-and-co.jpg');
-    background-size: cover;
-    filter: blur(2px);
-    min-height: 500px;
-    position: relative;
+.hdev-background{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fce4ce8856a711cc50a14e03e58783a&auto=format&fit=crop&w=2058&q=80);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +57,6 @@ body, html{
 
 .hdev-letter{
     position: absolute;
-    top:50%;
     width:100%;
     padding-left: 5%; 
     margin: auto;
@@ -72,11 +68,11 @@ body, html{
 }
 
 .hdev-letter h4{
-    font-size: 27px;
+    font-size: 100px;
 }
 .hdev-letter p{
-    opacity: 0.3;
-    font-size: 12px;
+    opacity: 0.8;
+    font-size: 20px;
 }
 .hdev-letter hr{
     background-color: white;
@@ -327,24 +323,15 @@ body, html{
 
 /* Media Queries */
 @media(max-width:1024px){
-    .hdev-letter{
-        top:25%;
-        width: 100%;
-    }
+    
 }
 @media(max-width:768px){
     .photo{
         grid-template-columns: 1fr;
     }
-    .hdev-letter{
-    top:35%;
-    width:100%;
-    }
+    
 @media(max-width:767px){
-    .hdev-letter{
-        top:50%;
-        width:100%;
-        }
+    
     
     .photo01Dev{
         width: 150px;
