@@ -1,0 +1,256 @@
+body,
+html {
+  height: 100%;
+  background-color: #ffd746 !important;
+  font-family: "Oswald", sans-serif !important;
+}
+
+/* navbar */
+nav {
+  transition: 0.8s;
+  color: white;
+}
+
+nav:hover {
+  background-color: white;
+  color: aliceblue;
+  transition: 0.8s;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.btn-outline-dark {
+  background-color: white !important;
+  color: #495057 !important;
+  border-color: #ced4da !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: white !important;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}
+
+/* navbar end */
+
+/* opening */
+
+.opening {
+  height: 100%;
+  width: 100%;
+  background: url(https://images.unsplash.com/photo-1462536943532-57a629f6cc60?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0a61bab8c6f01c30f8c3654d172ece6&auto=format&fit=crop&w=1952&q=80);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.openingText {
+  font-family: "Oswald", sans-serif;
+  margin: 0 auto;
+  color: white;
+  font-size: 120px;
+}
+.text-under {
+  font-size: 0.2em;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* opening */
+
+.textAlumni {
+  width: auto;
+  margin: 40px auto;
+  font-size: 4em;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  position: relative;
+}
+.lined {
+  width: 100px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0 auto;
+}
+
+.nav-link {
+  transition: 1s;
+  color: white !important;
+}
+
+/* alumnilist */
+
+.alumniList {
+  margin: 0 auto;
+  width: 80%;
+  height: 50vh;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.alumniListContainer .alumniList span {
+  grid-column: 1 / span 2;
+}
+
+.alumniListContainer div:nth-of-type(even) span {
+  grid-column: 2 / span 2;
+}
+
+.al1 .Pict {
+  background: url(https://images.unsplash.com/photo-1542036813441-fc9a620d539d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca6dcba025de36a3b9f97f90e2e79f36&auto=format&fit=crop&w=1951&q=80);
+}
+.al2 .Pict {
+  background: url(https://images.unsplash.com/photo-1542036813441-fc9a620d539d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca6dcba025de36a3b9f97f90e2e79f36&auto=format&fit=crop&w=1951&q=80);
+}
+.al3 .Pict {
+  background: url(https://images.unsplash.com/photo-1542036813441-fc9a620d539d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca6dcba025de36a3b9f97f90e2e79f36&auto=format&fit=crop&w=1951&q=80);
+}
+.al4 .Pict {
+  background: url(https://images.unsplash.com/photo-1542036813441-fc9a620d539d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca6dcba025de36a3b9f97f90e2e79f36&auto=format&fit=crop&w=1951&q=80);
+}
+
+.Pict {
+  background-position: center !important;
+  background-size: cover !important;
+}
+.Capt {
+  font-size: 1.5em;
+  text-align: center;
+  background: rgba(30, 30, 30, 1);
+  color: white;
+  font-family: "Oswald", sans-serif;
+  padding: 30px;
+  position: relative;
+}
+.classOf {
+  display: inline;
+  font-size: 4em;
+  font-family: "Kelly Slab", cursive;
+}
+
+.selfMadeButtonContainer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.selfMadeButton {
+  margin: 0 auto;
+  font-size: 0.8em;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  transition: 0.5s;
+  position: relative;
+  border: solid white 8px;
+}
+.selfMadeButton:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.behind {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  width: 100px;
+  height: 100px;
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+}
+/* alumnilist */
+/* The beginning of footer */
+#main-footer {
+  margin-top: 150px;
+}
+footer {
+  width: 100%;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+  background: white;
+  margin: auto;
+  padding: 50px 0px;
+  text-align: center;
+  color: black;
+  font-family: "Bangers", cursive;
+}
+.footer2 h6 {
+  text-transform: uppercase;
+  color: rgb(109, 105, 100);
+}
+.footer2 p {
+  line-height: 1.3em;
+  text-align: justify;
+}
+.footer2 a {
+  text-decoration: none;
+  color: lightgray;
+}
+.footer2 a:hover {
+  text-decoration: none;
+  color: #282828;
+}
+.footer2 a:active {
+  color: #282e34;
+  text-decoration: none;
+}
+/* footer */
+.fa-heart {
+  color: #ff0000;
+  animation: animateHeart 1.5s linear infinite;
+}
+@keyframes animateHeart {
+  0% {
+    transform: scale(1);
+    color: #000000;
+  }
+  20% {
+    color: #ee0000;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ff0000;
+  }
+  80% {
+    color: #ee0000;
+  }
+  100% {
+    transform: scale(1);
+    color: #000000;
+  }
+}
+/*footer ends*/
