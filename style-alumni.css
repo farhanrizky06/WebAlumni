@@ -198,6 +198,7 @@ html {
 #main-footer {
   margin-top: 100px;
 }
+/* The beginning of footer */
 footer {
   width: 100%;
   letter-spacing: 4px;
@@ -229,7 +230,7 @@ footer {
   color: #282e34;
   text-decoration: none;
 }
-.footer2 a:h .fa-heart {
+.fa-heart {
   color: #ff0000;
   animation: animateHeart 1.5s linear infinite;
 }
