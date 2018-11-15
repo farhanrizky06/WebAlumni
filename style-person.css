@@ -1,0 +1,278 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: white;
+    background-image: url('images/black2.jpg');
+
+} 
+
+/* FONTS */
+
+/*HEADER BACKGROUND*/
+
+
+.halumni-background01{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('images/photo2.jpg');
+    min-height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.halumni-letter{
+    position: absolute;
+    top:50%;
+    width:100%;
+    padding-left: 5%; 
+    margin: auto;
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+
+.halumni-letter h4{
+    font-size: 27px;
+}
+.halumni-letter p{
+    opacity: 0.3;
+    font-size: 12px;
+}
+.halumni-letter hr{
+    background-color: white;
+    position: relative;
+    width: 30%;
+}
+
+/*end of HEADER BACKGROUND*/
+
+.configPersonel{
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+}
+
+/*BEGINNING OF WHO WE ARE */
+.personTemplate{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    text-align: left;
+    justify-content: flex-start;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+.personTemplate{background-color: rgb(245, 245, 245);}
+.personTemplate div{
+    padding: 2em;
+}
+.personStatement hr{
+    background: black;
+    margin-bottom: 20px;
+
+}
+
+.personName{
+    text-align: center;
+    padding-top: 2em;
+    font-family: 'Lobster',cursive;
+}
+.personData01 .personDesc{
+    text-align: center;
+    font-size: 17px;
+    opacity: 0.5;
+    font-style: oblique;
+}
+
+.personPhoto{
+    padding: 2em;
+    background: url(images/who1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10px auto;
+    overflow: hidden;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.dataMark{
+    padding-top: 3em;
+}
+
+.personData02 h5
+{
+    padding: 1em 0 1em 0;
+    font-size: 27px;
+    font-family: 'Lobster', cursive;
+}
+
+.personData02{
+    font-family: 'Allerta Stencil', sans-serif;
+
+}
+
+.personStatement{
+    text-align:left;
+    padding: 0 3em;
+    background-color: rgb(245, 245, 245);
+}
+
+.txtStatement{  
+    padding: 2em;
+    font-size: 24px;
+    font-family: 'Rancho',cursive;
+    font-style: oblique;
+    box-sizing: border-box;
+}
+
+
+.txtStatement::before{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 96%; /* This will center the border. */
+    width: 5%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-right: 3px solid #f12b37;
+    border-top: 3px solid #f12b37; /* This creates the border. Replace black with whatever color you want. */
+
+}
+
+
+.txtStatement::after{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0px -1%; /* This will center the border. */
+    width: 5%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-left: 3px solid #f12b37;
+    border-bottom: 3px solid #f12b37; /* This creates the border. Replace black with whatever color you want. */
+}
+/* Media Queries */
+@media(max-width:1024px){
+    .halumni-letter{
+        top:25%;
+        width: 100%;
+    }
+}
+
+@media(max-width:810px){
+    .personData02 h5{font-size: 25px;}
+}
+@media(max-width:768px){
+    .halumni-letter{
+    top:35%;
+    width:100%;
+    }
+    .personTemplate{grid-template-columns: 1fr;}
+    .personData02 p{ font-size: 16px;}
+}
+@media(max-width:767px){
+    .halumni-letter{
+        top:50%;
+        width:100%;
+        }
+    .halumni-letter h4{
+        font-size: 24px;
+    }
+    .halumni-letter p{
+        font-size: 12px;
+    }
+    .halumni-letter hr{
+        width: 55%;
+    }
+    .personPhoto{width: 250px; height: 250px;}
+    .txtStatement{font-size: 20px;}
+}
+
+
+@media(max-width: 575.98px){
+    .halumni-background{
+        background-attachment: fixed;
+    }
+    .halumni-letter h4{
+        font-size: 20px;
+    }
+    .halumni-letter p{
+        font-size: 11px;
+    }
+    .halumni-letter hr{
+        width: 70%;
+    }
+    .personPhoto{width: 220px; height: 220px;}
+    .personName{font-size: 22px;}
+    .personData01 .personDesc{font-size: 16px;}
+    .personData02 h5{font-size: 21px;}
+    .personData02 p{font-size: 14px;}
+    .txtStatement{font-size: 19px;}
+    
+    .txtStatement::before{margin: 0 100%;}
+    .txtStatement::after{margin : 0 -4%;}
+}
+
+  
+  @media (max-width: 420px) {
+    .configPersonel{
+        padding: 50px 20px;
+    }
+    .halumni-letter h4{
+        font-size: 18px;
+    }
+    .halumni-letter p{
+        font-size: 9.5px;
+    }
+    .halumni-letter hr{
+        width: 95%;
+    }
+    .personPhoto{width: 215px; height: 215px;}
+    .personName{font-size: 21px;}
+    .personData01 .personDesc{font-size: 15px;}
+    .personData02 h5{font-size: 20px;}
+    .personData02 p{font-size: 12px;}
+    .personStatement{padding: 0 1em;}
+    .txtStatement{font-size: 18px;}
+    
+    .txtStatement::before{margin: 0 100%;}
+    .txtStatement::after{margin : 0 -4%;}
+}
+  @media (max-width: 375px) {
+    .personPhoto{width: 207px; height: 207px;}
+    .personName{font-size: 19px;}
+    .personData01 .personDesc{font-size: 14px;}
+    .personData02 h5{font-size: 18px;}
+    .personData02 p{font-size: 11px;}
+    .txtStatement{font-size: 17px;}
+    
+    .txtStatement::before{margin: 0 100%;}
+    .txtStatement::after{margin : 0 -4%;}
+
+.personTemplate div{
+    padding: 1em;
+}
+
+}
+
+@media(max-width:320px){
+    .personPhoto{width: 200px; height: 200px;}
+    .personName{font-size: 17px;}
+    .personData01 .personDesc{font-size: 12px;}
+    .personData02 h5{font-size: 16px;}
+    .personData02 p{font-size: 10px;}
+    .txtStatement{font-size: 15px;}
+    
+    .txtStatement::before{margin: 0 100%;}
+    .txtStatement::after{margin : 0 -4%;}
+
+}
