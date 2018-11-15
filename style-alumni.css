@@ -7,6 +7,13 @@ html {
 
 /* opening */
 
+.carousel-control-next {
+  z-index: 2;
+}
+.carousel-control-prev {
+  z-index: 2;
+}
+
 .openingPict1 {
   width: 100%;
   height: 100vh;
@@ -29,16 +36,167 @@ html {
   background-size: cover;
 }
 .openingCapt {
+  color: white;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100vh;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
+.openingCapt div {
+  text-align: center;
+  margin: 0 auto;
+}
+.openingCaptTop {
+  line-height: 25px;
+  font-size: 3em;
+}
+.openingCaptMid {
+  font-family: "Permanent Marker", cursive;
 
+  line-height: 200px;
+  font-size: 12em;
+}
+.openingCaptBot {
+  width: 50vw;
+}
 /* opening */
 
+.squad {
+  margin: 20px auto;
+  margin-bottom: 0px;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  position: relative;
+}
+.squadText {
+  position: relative;
+}
+.squadText::before {
+  content: "";
+  width: 200px;
+  border-top: solid rgb(41, 41, 41) 5px;
+  position: absolute;
+  top: 50%;
+  left: -80%;
+}
+.squadText::after {
+  content: "";
+  width: 200px;
+  border-top: solid rgb(41, 41, 41) 5px;
+  position: absolute;
+  top: 50%;
+  right: -80%;
+}
+
+/* cards */
+
+.containerCards {
+  width: 100%;
+  text-align: center;
+}
+
+.cards {
+  width: 300px;
+  height: 450px;
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+}
+.cards .text {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+  padding: 10px;
+  padding-top: 75px;
+  text-align: center;
+  border-radius: 10px;
+}
+.cards .img {
+  width: 150px;
+  height: 150px;
+  background: url(https://images.unsplash.com/photo-1542155469-fdda4225a6d0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b610bdcf8f6221acd848266d27630afd&auto=format&fit=crop&w=1534&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 75px);
+  top: calc(25px);
+}
+.selfMadeButtonContainer {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  left: calc(50% - 50px);
+  font-size: 1.2em;
+}
+.selfMadeButton {
+  margin: 0 auto;
+  font-size: 0.8em;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  transition: 0.5s;
+  position: relative;
+  border: solid rgba(0, 0, 0, 0.1) 8px;
+}
+.selfMadeButton:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.behind {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 0;
+  width: 100px;
+  height: 100px;
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+}
+.name {
+  margin: 15px;
+  font-size: 2.5em;
+  line-height: 40px;
+  color: aliceblue;
+}
+.uni {
+  color: aliceblue;
+}
+/* cards */
 #main-footer {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 footer {
   width: 100%;
@@ -71,8 +229,7 @@ footer {
   color: #282e34;
   text-decoration: none;
 }
-/* footer */
-.fa-heart {
+.footer2 a:h .fa-heart {
   color: #ff0000;
   animation: animateHeart 1.5s linear infinite;
 }
@@ -97,3 +254,143 @@ footer {
   }
 }
 /* footer ends */
+@media (max-width: 900px) {
+  .squad {
+    font-size: 3em;
+  }
+  .squadText::before {
+    width: 150px;
+  }
+  .squadText::after {
+    width: 150px;
+  }
+}
+@media (max-width: 700px) {
+  .squad {
+    font-size: 2.5em;
+  }
+  .squadText::before {
+    width: 120px;
+  }
+  .squadText::after {
+    width: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .openingCaptTop {
+    font-size: 2.5em;
+  }
+  .openingCaptMid {
+    font-size: 9em;
+    line-height: 170px;
+  }
+  .openingCaptBot {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 500px) {
+  .squad {
+    font-size: 2em;
+  }
+  .squadText::before {
+    width: 80px;
+    left: -60%;
+  }
+  .squadText::after {
+    width: 80px;
+    right: -60%;
+  }
+  /* cards */
+  .cards {
+    width: 250px;
+    height: 400px;
+    margin: 15px;
+  }
+  .cards .text {
+    height: 300px;
+    padding-top: 40px;
+  }
+  .cards .img {
+    width: 100px;
+    height: 100px;
+    left: calc(50% - 50px);
+    top: calc(50px);
+  }
+  .selfMadeButtonContainer {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    left: calc(50% - 40px);
+    font-size: 1.2em;
+  }
+  .selfMadeButton {
+    margin: 0 auto;
+    font-size: 0.8em;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+    position: relative;
+    border: solid rgba(0, 0, 0, 0.1) 8px;
+  }
+  .selfMadeButton:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  .behind {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+    background: #8a2387; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 50%;
+  }
+  .name {
+    margin: 15px;
+    font-size: 2em;
+    line-height: 40px;
+    color: aliceblue;
+  }
+  .uni {
+    color: aliceblue;
+  }
+}
+@media (max-width: 400px) {
+  .squad {
+    font-size: 2em;
+  }
+  .squadText::before {
+    width: 40px;
+    left: -40%;
+  }
+  .squadText::after {
+    width: 40px;
+    right: -40%;
+  }
+  .openingCaptTop {
+    font-size: 2em;
+  }
+  .openingCaptMid {
+    font-size: 6em;
+    line-height: 120px;
+  }
+  .openingCaptBot {
+    font-size: 0.7em;
+  }
+}
