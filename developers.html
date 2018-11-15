@@ -1,199 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- --------------------css------------------- -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style-developers.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="navbar-styling.css" />
+    <link rel="stylesheet" type="text/css" href="style-developers.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- --------------------css------------------ -->
 
     <!-- --------------------other------------------ -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link rel="shortcut icon" type="png" href="images/logo.png">
-    <!-----------------------other--------------------->
-    <title>Developers | Alumnus ac Alumna de IGS</title>	
-</head>
-<body>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="png" href="images/logo.png" />
+    <!-- ---------------------other------------------- -->
+    <title>Developers | Alumnus ac Alumna de IGS</title>
+  </head>
+  <body>
     <header id="main-header">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-                <a class="navbar-brand" href="">
-                    <img src="images/logo.png" style="height: 30px;width: auto">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+          <a class="navbar-brand" href="">
+            <img src="images/logo.png" style="height: 30px;width: auto" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News & Articles</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Alumni
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News & Articles</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Alumni
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Class of 17</a>
-                                <a class="dropdown-item" href="#">Class of 18</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item disabled" href="#">Class of 19 (Graduating Soon...)</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                About Us
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="web-origin.html">Website's Origin</a>
-                                <a class="dropdown-item" href="developers.html">Developers</a>
-                            </div>
-                        </li>
-                        <div class="line"></div>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Class of 17</a>
+                  <a class="dropdown-item" href="#">Class of 18</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#"
+                    >Class of 19 (Graduating Soon...)</a
+                  >
                 </div>
-            </nav>
-        </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="web-origin.html"
+                    >Website's Origin</a
+                  >
+                  <a class="dropdown-item" href="developers.html">Developers</a>
+                </div>
+              </li>
+              <div class="line"></div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
     </header>
-            <!--end of navbar-->
-        
-        <div class="hdev-background">
-            <div class="hdev-background01"></div>
-            <div class="hdev-letter">
-                <h4><strong>noname and co.</strong></h4>
-                <hr align="left">
-                <p>This is who we really are.</p>
-            </div>
-        </div>
+    <!-- end of navbar -->
 
-        <!--SECTION 1 INTRODUCTION-->
-        <div class="dev-config">
-        <div class="the-team">
-            <div class="who02">
-                <div class="who01">                
-                 <h4>The team</h4>
-                </div>    
-                <div class="title-dev"><hr><h4>Developers</h4><hr></div>                
-                <div class="photo">
-                <div class="photo01">        
-                    <div class="photo01Dev"></div>
-                    <h6>Einstein</h6>
-                    <h5>Analytics</h5>
-                </div>
-                <div class="photo01">
-                    <div class="photo02Dev"></div>
-                    <h6>Adolf Hitler</h6>
-                    <h5>Marketing</h5>
-                </div>
-                <div class="photo01">
-                    <div class="photo03Dev"></div>
-                    <h6>Donald Trump</h6>
-                    <h5>Development</h5>
-                </div>
-                </div>
-                <div class="title-dev"><hr><h4>Public Relation</h4><hr></div>                
-                <div class="phnto">
-                <div class="photo01">
-                    <div class="photo04Dev"></div>
-                    <h6>Tony Stark</h6>
-                    <h5>System Control</h5>
-                </div>
-                <div class="photo01">
-                    <div class="photo05Dev"></div>
-                    <h6>G.</h6>
-                    <h5>Morale Booster</h5>
-                </div>
-                </div>
-                <div class="title-dev"><hr><h4>Logo Designer</h4><hr></div>
-                <div class="phxto">
-                <div class="photo01">
-                    <div class="photo06Dev"></div>
-                    <h6>Mario Bros</h6>
-                    <h5>Support</h5>
-                </div>
-                </div>
+    <div class="hdev-background">
+      <div class="hdev-letter">
+        <h4><strong>noname and co.</strong></h4>
+        <hr align="left" />
+        <p>This is who we really are.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 1 INTRODUCTION -->
+    <div class="dev-config">
+      <div class="the-team">
+        <div class="who02">
+          <div class="who01"><h4>The team</h4></div>
+          <div class="title-dev">
+            <hr />
+            <h4>Developers</h4>
+            <hr />
+          </div>
+          <div class="photo">
+            <div class="photo01">
+              <div class="photo01Dev"></div>
+              <h6>Einstein</h6>
+              <h5>Analytics</h5>
             </div>
-        </div>
-        </div>
- 
-        <!--SECTION 2 WHAT WE HAVE DONE-->
-       <div class="dev-config">
-            <div class="dev-info">
-                <div class="box-box1">
-                    <h4><strong>What We Have Done</strong></h4>
-                </div>
-                <div class="box-box2">
-                    <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde deserunt nostrum sequi culpa blanditiis, nesciunt, velit esse eum hic alias vel qui ipsum cupiditate perferendis dolorum voluptatibus vero tenetur est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eveniet, eius corporis debitis ipsum deleniti. Autem, vero nisi repellat expedita aperiam eos laboriosam tempora distinctio. Quam, officiis! Adipisci, consequuntur aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, asperiores fugit! Pariatur assumenda aut doloribus odio, quia expedita cumque iste corrupti harum culpa exercitationem nemo iure similique. Rerum, dolor molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vitae, expedita quasi sint voluptates dolor ipsa voluptatem, dignissimos beatae tempore tenetur dicta saepe magni odio praesentium natus possimus laudantium commodi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dignissimos ratione repudiandae rerum rem facere blanditiis quas dolores officiis. Est perspiciatis explicabo, ipsam necessitatibus reiciendis nulla fugiat tempore. Vero, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque, provident voluptates est alias quas vero accusantium? Perspiciatis, fugiat praesentium mollitia similique minima voluptatum molestias minus. Tempore explicabo necessitatibus quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id assumenda quod optio nostrum. Nulla accusantium consequatur doloremque vitae dignissimos ducimus doloribus officia excepturi a praesentium. Impedit earum cum saepe! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam natus unde impedit, nesciunt est repudiandae possimus veniam at eaque error numquam animi velit praesentium nobis? Sed itaque obcaecati iusto adipisci!"</p>
-                </div>
+            <div class="photo01">
+              <div class="photo02Dev"></div>
+              <h6>Adolf Hitler</h6>
+              <h5>Marketing</h5>
             </div>
-        </div>
-        
-        <div class="dev-config">
-            <div class="support-us">
-                <div class="message">
-                <h4>Message Us</h4>
-                <p>If you wish Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem beatae ducimus blanditiis porro placeat officia sit corporis cum repellat asperiores quod similique magnam cupiditate sapiente aliquid, voluptatum necessitatibus voluptas veritatis.</p>
-                </div>
-                <div class="form-group">
-                <form class="my-form">
-                    <p>Name: </p>
-                    <input type="text" name="name" placeholder="Enter first name">
-                <div class="form-group">
-                    <p>Email: </p>
-                    <input type="text" name="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <p>Message: </p>
-                    <textarea name="message"></textarea>
-                </div>
-                <input class="submit-btn" type="submit" value="submit" name="">        
-                </form>
-                </div>
+            <div class="photo01">
+              <div class="photo03Dev"></div>
+              <h6>Donald Trump</h6>
+              <h5>Development</h5>
             </div>
+          </div>
+          <div class="title-dev">
+            <hr />
+            <h4>Public Relation</h4>
+            <hr />
+          </div>
+          <div class="phnto">
+            <div class="photo01">
+              <div class="photo04Dev"></div>
+              <h6>Tony Stark</h6>
+              <h5>System Control</h5>
+            </div>
+            <div class="photo01">
+              <div class="photo05Dev"></div>
+              <h6>G.</h6>
+              <h5>Morale Booster</h5>
+            </div>
+          </div>
+          <div class="title-dev">
+            <hr />
+            <h4>Logo Designer</h4>
+            <hr />
+          </div>
+          <div class="phxto">
+            <div class="photo01">
+              <div class="photo06Dev"></div>
+              <h6>Mario Bros</h6>
+              <h5>Support</h5>
+            </div>
+          </div>
         </div>
-    <!--FOOTER-->
+      </div>
+    </div>
+
+    <!-- SECTION 2 WHAT WE HAVE DONE -->
+    <div class="dev-config">
+      <div class="dev-info">
+        <div class="box-box1">
+          <h4><strong>What We Have Done</strong></h4>
+        </div>
+        <div class="box-box2">
+          <p>
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            deserunt nostrum sequi culpa blanditiis, nesciunt, velit esse eum
+            hic alias vel qui ipsum cupiditate perferendis dolorum voluptatibus
+            vero tenetur est. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            eveniet, eius corporis debitis ipsum deleniti. Autem, vero nisi
+            repellat expedita aperiam eos laboriosam tempora distinctio. Quam,
+            officiis! Adipisci, consequuntur aliquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Facere, asperiores fugit! Pariatur
+            assumenda aut doloribus odio, quia expedita cumque iste corrupti
+            harum culpa exercitationem nemo iure similique. Rerum, dolor
+            molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Facere vitae, expedita quasi sint voluptates dolor ipsa voluptatem,
+            dignissimos beatae tempore tenetur dicta saepe magni odio
+            praesentium natus possimus laudantium commodi. Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Nulla dignissimos ratione
+            repudiandae rerum rem facere blanditiis quas dolores officiis. Est
+            perspiciatis explicabo, ipsam necessitatibus reiciendis nulla fugiat
+            tempore. Vero, cupiditate! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos doloremque, provident voluptates est
+            alias quas vero accusantium? Perspiciatis, fugiat praesentium
+            mollitia similique minima voluptatum molestias minus. Tempore
+            explicabo necessitatibus quam? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Possimus id assumenda quod optio
+            nostrum. Nulla accusantium consequatur doloremque vitae dignissimos
+            ducimus doloribus officia excepturi a praesentium. Impedit earum cum
+            saepe! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laboriosam natus unde impedit, nesciunt est repudiandae possimus
+            veniam at eaque error numquam animi velit praesentium nobis? Sed
+            itaque obcaecati iusto adipisci!"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dev-config">
+      <div class="support-us">
+        <div class="message">
+          <h4>Message Us</h4>
+          <p>
+            If you wish Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Autem beatae ducimus blanditiis porro placeat officia sit corporis
+            cum repellat asperiores quod similique magnam cupiditate sapiente
+            aliquid, voluptatum necessitatibus voluptas veritatis.
+          </p>
+        </div>
+        <div class="form-group">
+          <form class="my-form">
+            <p>Name:</p>
+            <input type="text" name="name" placeholder="Enter first name" />
+            <div class="form-group">
+              <p>Email:</p>
+              <input type="text" name="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+              <p>Message:</p>
+              <textarea name="message"></textarea>
+            </div>
+            <input class="submit-btn" type="submit" value="submit" name="" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
 
     <div class="wrapper">
-        <footer id="main-footer">
-            <p>Made with <i class="fas fa-heart"></i> by Noname and Co.</p>
-        </footer>
+      <footer id="main-footer">
+        <p>Made with <i class="fas fa-heart"></i> by Noname and Co.</p>
+      </footer>
     </div>
-    <!--SCRIPTS-->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-    <script src="developers.js"></script>
-    <!--END OF BODY-->
-</body>
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="style-developer.js"></script>
+    <script src="navbar-styling.js"></script>
+    <!-- END OF BODY -->
+  </body>
 </html>

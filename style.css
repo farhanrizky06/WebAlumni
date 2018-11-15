@@ -3,7 +3,7 @@ html {
   height: 100%;
   margin: 0;
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Oswald", sans-serif !important;
   font-weight: 400;
   line-height: 1.8em;
   color: white;
@@ -180,39 +180,6 @@ html {
 /*Header*/
 header {
   margin: 0;
-}
-
-nav {
-  transition: 0.8s;
-  color: white;
-}
-
-nav:hover {
-  background-color: white;
-  color: aliceblue;
-  transition: 0.8s;
-}
-
-.nav-link {
-  color: black !important;
-}
-
-.navbar-brand {
-  color: white !important;
-}
-
-.btn-outline-dark {
-  background-color: white !important;
-  color: #495057 !important;
-  border-color: #ced4da !important;
-}
-
-.navbar-light .navbar-toggler-icon {
-  background-color: white !important;
-}
-
-.navbar-toggler {
-  background-color: white !important;
 }
 
 /*HEADER end*/

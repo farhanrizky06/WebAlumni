@@ -1,319 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- --------------------css------------------ -->
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="navbar-styling.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- --------------------css------------------ -->
 
     <!-- --------------------other------------------ -->
-    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link rel="shortcut icon" type="png" href="images/logo.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rancho"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rock+Salt"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="png" href="images/logo.png" />
 
     <!-- --------------------other------------------ -->
 
     <title>Alumnus ac Alumna de IGS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="main-header">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-                <a class="navbar-brand" href="">
-                    <img src="images/logo.png" style="height: 30px;width: auto">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+          <a class="navbar-brand" href="">
+            <img src="images/logo.png" style="height: 30px;width: auto" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News & Articles</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Alumni
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News & Articles</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Alumni
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Class of 17</a>
-                                <a class="dropdown-item" href="#">Class of 18</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item disabled" href="#">Class of 19 (Graduating Soon...)</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                About Us
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="web-origin.html">Website's Origin</a>
-                                <a class="dropdown-item" href="developers.html">Developers</a>
-                            </div>
-                        </li>
-                        <div class="line"></div>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Class of 17</a>
+                  <a class="dropdown-item" href="#">Class of 18</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#"
+                    >Class of 19 (Graduating Soon...)</a
+                  >
                 </div>
-            </nav>
-        </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="web-origin.html"
+                    >Website's Origin</a
+                  >
+                  <a class="dropdown-item" href="developers.html">Developers</a>
+                </div>
+              </li>
+              <div class="line"></div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
     </header>
-    <!--end of navbar-->
+    <!-- end of navbar -->
 
     <div class="theLandingPage">
-        <div class="theBackground"></div>
-        <div class="theTextBox">
-            <span>Welcome to Ignite</span><br>
+      <div class="theBackground"></div>
+      <div class="theTextBox">
+        <span>Welcome to Ignite</span><br />
 
-            <span style="font-size:0.5em">We Are</span><br>
-            <div id="typewriter">
-                <span id="typewriterText">Alumni</span>
-            </div>
-
-        </div>
+        <span style="font-size:0.5em">We Are</span><br />
+        <div id="typewriter"><span id="typewriterText">Alumni</span></div>
+      </div>
     </div>
 
-
-    <!--SECTION 1 INTRODUCTION-->
+    <!-- SECTION 1 INTRODUCTION -->
     <div class="section">
-
-        <div id="box1">
-            <p class="theQuote">We ignited, now you spark</p>
-
-        </div>
+      <div id="box1"><p class="theQuote">We ignited, now you spark</p></div>
     </div>
-
 
     <div id="box2">
+      <h4 id="intro" style="font-family:''">Intro</h4>
 
-        <h4 id="intro" style="font-family:''">Intro</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+        Dignissimos error enim reprehenderit voluptatibus possimus. <br />
+        Dolor, natus minus a doloribus accusantium <br />
+        asperiores maxime similique repellendus ducimus reprehenderit et qui
+        quam numquam?
+      </p>
+      <div class="readmore1-btn" style="padding-bottom: 10px">
+        <a href="web-origin.html">Read More</a>
+      </div>
+      <hr />
+      <h4 id="purpose">Purpose</h4>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-            Dignissimos error enim reprehenderit voluptatibus possimus. <br>
-            Dolor, natus minus a doloribus accusantium <br> asperiores maxime similique repellendus
-            ducimus reprehenderit et qui quam numquam?</p>
-        <div class="readmore1-btn" style="padding-bottom: 10px">
-            <a href="web-origin.html">Read More</a>
-        </div>
-        <hr>
-        <h4 id="purpose">Purpose</h4>
-
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
-            Dignissimos error enim reprehenderit voluptatibus possimus. <br>
-            Dolor, natus minus a doloribus accusantium asperiores maxime similique repellendus <br>
-            ducimus reprehenderit et qui quam numquam?</p>
-        <div class="readmore1-btn">
-            <a href="web-origin.html">Read More</a>
-        </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+        Dignissimos error enim reprehenderit voluptatibus possimus. <br />
+        Dolor, natus minus a doloribus accusantium asperiores maxime similique
+        repellendus <br />
+        ducimus reprehenderit et qui quam numquam?
+      </p>
+      <div class="readmore1-btn"><a href="web-origin.html">Read More</a></div>
     </div>
-
 
     <section class="random">
-
-        <div class="elegance-light">
-            <hr style="background-color: #fff;width:60%;margin:0px auto;height: 1px;display: block;opacity: 0.6;">
-            <h2>The Ignitè</h2>
-            <hr style="background-color: #fff;width:60%;margin:20px auto 40px auto;height: 1px;display: block;opacity: 0.6;">
-
+      <div class="elegance-light">
+        <hr
+          style="background-color: #fff;width:60%;margin:0px auto;height: 1px;display: block;opacity: 0.6;"
+        />
+        <h2>The Ignitè</h2>
+        <hr
+          style="background-color: #fff;width:60%;margin:20px auto 40px auto;height: 1px;display: block;opacity: 0.6;"
+        />
+      </div>
+      <div class="remark">
+        <div class="remarkContent remark1text">
+          <div>
+            <p class="remarkText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem velit non temporibus aliquid vitae! Aut cumque
+              provident perferendis accusantium magni? Eos sit assumenda in ea
+              nihil laborum minus? Ipsa eum ad temporibus recusandae placeat,
+              ipsum ut maxime nostrum inventore optio? Lorem ipsum dolor sit
+              amet consectetur adipisicing.
+            </p>
+            <h4 class="remarkAuthor">- Cicero</h4>
+            <h6 class="remarkAuthor">Class of 17</h6>
+          </div>
         </div>
-        <div class="remark">
-            <div class="remarkContent remark1text">
-                <div>
-                    <p class="remarkText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem velit
-                        non
-                        temporibus aliquid
-                        vitae! Aut cumque provident perferendis accusantium magni? Eos sit assumenda in ea nihil
-                        laborum
-                        minus? Ipsa eum ad temporibus recusandae placeat, ipsum ut maxime nostrum inventore optio?
-                        Lorem
-                        ipsum dolor sit amet consectetur adipisicing.</p>
-                    <h4 class="remarkAuthor">- Cicero</h4>
-                    <h6 class="remarkAuthor">Class of 17
-                    </h6>
-                </div>
-            </div>
-            <div class="remarkContent remark1pict">
-                <div class="remarkPict">
-
-                </div>
-            </div>
-            <div class="remarkContent remark2pict">
-                <div class="remarkPict">
-
-                </div>
-            </div>
-            <div class="remarkContent remark2text">
-                <div>
-                    <p class="remarkText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem laborum
-                        fuga. Sunt totam, id
-                        ex qui neque obcaecati. Ea, quia soluta! Eligendi quam cupiditate est odit! Ullam repudiandae
-                        itaque rerum cum sunt pariatur laudantium recusandae inventore officia. Expedita, voluptatem.</p>
-                    <h3 class="remarkAuthor">- Kant</h3>
-                    <h5 class="remarkAuthor">Class of 18</h5>
-                </div>
-            </div>
+        <div class="remarkContent remark1pict">
+          <div class="remarkPict"></div>
         </div>
-
-
+        <div class="remarkContent remark2pict">
+          <div class="remarkPict"></div>
+        </div>
+        <div class="remarkContent remark2text">
+          <div>
+            <p class="remarkText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              quidem laborum fuga. Sunt totam, id ex qui neque obcaecati. Ea,
+              quia soluta! Eligendi quam cupiditate est odit! Ullam repudiandae
+              itaque rerum cum sunt pariatur laudantium recusandae inventore
+              officia. Expedita, voluptatem.
+            </p>
+            <h3 class="remarkAuthor">- Kant</h3>
+            <h5 class="remarkAuthor">Class of 18</h5>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="connected">
-        <div class="elegance">
-            <hr style="background-color: rgba(0,0,0,0.5);width:60%;margin:0px auto;height: 1px;display: block;opacity: 0.6;">
-            <h1>Link with Us</h1>
-            <hr style="background-color: rgba(0,0,0,0.5);width:60%;margin:20px auto 40px auto;height: 1px;display: block;opacity: 0.6;">
+      <div class="elegance">
+        <hr
+          style="background-color: rgba(0,0,0,0.5);width:60%;margin:0px auto;height: 1px;display: block;opacity: 0.6;"
+        />
+        <h1>Link with Us</h1>
+        <hr
+          style="background-color: rgba(0,0,0,0.5);width:60%;margin:20px auto 40px auto;height: 1px;display: block;opacity: 0.6;"
+        />
+      </div>
+      <div class="linkages">
+        <div id="link1">
+          <a href="news.html">
+            <div class="boxForSvg">
+              <i class="fas fa-chalkboard-teacher" style="font-size: 90px;"></i>
+            </div>
+            <h5>Academic Tips</h5>
+          </a>
         </div>
-        <div class="linkages">
-            <div id="link1">
-                <a href="news.html">
-                    <div class="boxForSvg">
-                        <i class="fas fa-chalkboard-teacher" style="font-size: 90px;"></i>
-                    </div>
-                    <h5>Academic Tips</h5>
-                </a>
+        <div id="link2">
+          <a href="news.html">
+            <div class="boxForSvg">
+              <i class="fas fa-plane-departure" style="font-size: 90px;"></i>
             </div>
-            <div id="link2">
-                <a href="news.html">
-                    <div class="boxForSvg">
-                        <i class="fas fa-plane-departure" style="font-size: 90px;"></i>
-                    </div>
-                    <h5>Life Overseas</h5>
-                </a>
-            </div>
-            <div id="link3">
-                <a href="alumni.html">
-                    <div class="boxForSvg">
-                        <i class="fas fa-address-card" style="font-size: 90px;"></i>
-                    </div>
-                    <h5>Our Contact</h5>
-                </a>
-            </div>
-            <div id="link4">
-                <a href="news.html">
-                    <div class="boxForSvg">
-                        <i class="fas fa-user-graduate" style="font-size: 90px;"></i>
-                    </div>
-                    <h5>College Admissions</h5>
-                </a>
-            </div>
+            <h5>Life Overseas</h5>
+          </a>
         </div>
+        <div id="link3">
+          <a href="alumni.html">
+            <div class="boxForSvg">
+              <i class="fas fa-address-card" style="font-size: 90px;"></i>
+            </div>
+            <h5>Our Contact</h5>
+          </a>
+        </div>
+        <div id="link4">
+          <a href="news.html">
+            <div class="boxForSvg">
+              <i class="fas fa-user-graduate" style="font-size: 90px;"></i>
+            </div>
+            <h5>College Admissions</h5>
+          </a>
+        </div>
+      </div>
     </section>
     <div class="carousel-fixed">
-        <div id="carouselBegin">
-
-            <div style="margin:0 auto" class="carouselBeginContent">
-                <span>Where We Are</span><br>
-                <button type="button" id="carouselBeginContentButton" class="btn btn-info"><i class="fas fa-search-location"></i></button>
-            </div>
+      <div id="carouselBegin">
+        <div style="margin:0 auto" class="carouselBeginContent">
+          <span>Where We Are</span><br />
+          <button
+            type="button"
+            id="carouselBeginContentButton"
+            class="btn btn-info"
+          >
+            <i class="fas fa-search-location"></i>
+          </button>
         </div>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background:url(images/singapore.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Singapore</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/japan.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Japan</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/indonesia.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Indonesia</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/malaysia.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Malaysia</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/germany.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Germany</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/australia.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Australia</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/china.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>China</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/southkorea.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>South Korea</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/taiwan.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Taiwan</h1>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background:url(images/hongkong.jpg);background-position:center;background-size:cover">
-                    <div class="caroCaption">
-                        <h1>Hong Kong</h1>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+      </div>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background:url(images/singapore.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Singapore</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/japan.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Japan</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/indonesia.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Indonesia</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/malaysia.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Malaysia</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/germany.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Germany</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/australia.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Australia</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/china.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>China</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/southkorea.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>South Korea</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/taiwan.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Taiwan</h1></div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background:url(images/hongkong.jpg);background-position:center;background-size:cover"
+          >
+            <div class="caroCaption"><h1>Hong Kong</h1></div>
+          </div>
         </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 
-    <!--FOOTER-->
+    <!-- FOOTER -->
 
     <div class="wrapper">
-        <footer id="main-footer">
-            <p>Made with <i class="fas fa-heart"></i> by Noname and Co.</p>
-        </footer>
+      <footer id="main-footer">
+        <p>Made with <i class="fas fa-heart"></i> by Noname and Co.</p>
+      </footer>
     </div>
-    <!--SCRIPTS-->
+    <!-- SCRIPTS -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
     <script src="style.js"></script>
-    <!--END OF BODY-->
-</body>
-
+    <script src="navbar-styling.js"></script>
+    <!-- END OF BODY -->
+  </body>
 </html>
