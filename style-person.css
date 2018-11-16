@@ -15,40 +15,17 @@ body, html{
 /*HEADER BACKGROUND*/
 
 
-.halumni-background{
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://images.unsplash.com/photo-1533247774066-59cbfc352299?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7dbc9b4288ec91efea7c85cd0df45db&auto=format&fit=crop&w=1950&q=80);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.halumni-letter{
-    margin: 0 auto;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .halumni-letter h4{
     font-size: 60px;
     font-family: 'Kaushan Script', cursive;
     text-shadow: 2px 2px #000;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
 }
-.halumni-letter p{
-    font-size: 2em;
-    text-shadow: 2px 2px #000;
-    font-family: 'Ranga', cursive;
-}
-.halumni-letter hr{
-    background-color: white;
-    position: relative;
-    width: 30%;
-}
-
+.profileLine{background: #000;width: 400px;height: 5px;margin: 0 auto;}
 /*end of HEADER BACKGROUND*/
 
 .configPersonel{
@@ -75,16 +52,10 @@ body, html{
 .personTemplate div{
     padding: 2em;
 }
-.personStatement hr{
-    background: black;
-    margin-bottom: 20px;
-
-}
-
 
 .personName{
     text-align: center;
-    text-shadow: 2px 2px #666;
+    text-shadow: 2px 2px #000;
     padding-top: 2em;
     font-family: 'Oswald',cursive;
     font-size: 30px;
@@ -107,7 +78,6 @@ body, html{
     font-family: 'Kalam',cursive;
 }
 .personPhoto{
-    padding: 2em;
     background: url(images/who1.jpg);
     background-position: center;
     background-size: cover;
@@ -115,29 +85,18 @@ body, html{
     height: 300px;
     border: solid 8px rgba(100, 100, 100, 0.2);
     border-radius: 50%;
-    margin: 10px auto;
+    margin: auto;
     overflow: hidden;
 }
-.profileText
-{
-    text-align: center;
-    padding: 10px 0 10px 0;
-    font-size: 30px;
-    text-shadow: 2px 2px #666;
-    border-top: #ffd746 2px solid;
-    border-bottom: #ffd746 2px solid; 
-    font-family: 'Permanent Marker', cursive;
-}
-
 .personData02{
     font-family: 'Oswald', sans-serif;
     background: linear-gradient(
         to left,#242120,#414746);
         );
-    font-size: 20px;
+    font-size: 22px;
     text-shadow: 2px 2px #000;
+    margin-top:-1px;
 }
-.dataText{padding-top: 3em;}
 .personStatement{
     text-align:left;
     padding: 0 3em;
@@ -158,7 +117,7 @@ body, html{
 .txtStatement::before{
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 96%; /* This will center the border. */
+    margin: 0 97%; /* This will center the border. */
     width: 5%; /* Change this to whatever width you want. */
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-right: 3px solid #ffd746;
@@ -170,7 +129,7 @@ body, html{
 .txtStatement::after{
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    margin: 0px -1%; /* This will center the border. */
+    margin: 0px -2%; /* This will center the border. */
     width: 5%; /* Change this to whatever width you want. */
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-left: 3px solid #ffd746;
@@ -242,35 +201,31 @@ body, html{
 @media(max-width:900px){
     .personName{font-size: 28px;}
     .personDesc{font-size: 17px;}
-    .profileText{font-size: 28px;}
-    .personData02 p{font-size: 18px;}
+    .personData02 p{font-size: 21px;}
     .txtStatement{font-size: 23px;}
 }
 @media(max-width:768px){
     .halumni-letter h4{font-size: 57px;}
-    .personTemplate{grid-column-gap: none;}
     .personPhoto{width: 275px;height: 275px;}
     .configPersonel{padding: 100px 75px;}
     .personTemplate{grid-template-columns: 1fr;}
+    .personTemplate{grid-column-gap: none;}
     .personData01{background: linear-gradient(
         to right,#242120,#414746,#242120);}
     .personData02{background: linear-gradient(
         to right,#242120,#414746,#242120);}
     .personName{font-size: 26px;}
     .personDesc{font-size: 15px;}
-    .profileText{font-size: 26px;}
-    .personData02 p{font-size: 16px;}
+    .personData02 p{font-size: 19px;}
     .txtStatement{font-size: 21px;}    
 }
 
 @media(max-width: 600px){
     .halumni-letter h4{font-size: 55px;}
-    .personTemplate{grid-column-gap: none;}
     .personPhoto{width: 250px;height: 250px;}
     .personName{font-size: 25px;}
     .personDesc{font-size: 14px;}
-    .profileText{font-size: 25px;}
-    .personData02 p{font-size: 15px;}
+    .personData02 p{font-size: 18px;}
     .txtStatement{font-size: 20px;}    
     
     .txtStatement::before{margin: 0 100%;}
@@ -282,13 +237,12 @@ body, html{
     .configPersonel{
         padding: 50px 0;
     }
+    .profileLine{width: 370px;}
     .halumni-letter h4{font-size: 45px;}
-    .halumni-letter p{font-size: 27px;}
     .personPhoto{width: 225px; height: 225px;}
     .personName{font-size: 23px;}
     .personDesc{font-size: 12px;}
-    .profileText{font-size: 23px;}
-    .personData02 p{font-size: 13px;}
+    .personData02 p{font-size: 17px;}
     .personStatement{padding: 0 1em;}
     .txtStatement{font-size: 18px;}
     
@@ -296,13 +250,12 @@ body, html{
     .txtStatement::after{margin : 0 -4%;}
 }
   @media (max-width: 400px) {
+    .profileLine{width: 355px;}
     .halumni-letter h4{font-size: 37px;}
-    .halumni-letter p{font-size: 20px;}
     .personPhoto{width: 210px; height: 210px;}
-    .personName{font-size: 21x;}
+    .personName{font-size: 21px;}
     .personDesc{font-size: 11px;}
-    .profileText{font-size: 21px;}
-    .personData02 p{font-size: 12px;}
+    .personData02 p{font-size: 16px;}
     .txtStatement{font-size: 17px;}
     
     .txtStatement::before{margin: 0 100%;}
@@ -310,4 +263,7 @@ body, html{
 
     .personTemplate div{padding: 1em;}
 
+}
+@media(max-width:320px;){
+    .profileLine{width: 330px;}
 }
